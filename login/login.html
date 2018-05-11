@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>登录-计服3.0</title>
+    <!-- import CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    <link rel="stylesheet" type="text/css" href="css/lib/iconfont/iconfont.css">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+<div id="app">
+    <el-row>
+        <!--左边图片区域-->
+        <el-col :span="8"><div><img src="img/bg-left.png" class="bg-left">&nbsp;</div></el-col>
+        <!--中间内容区域-->
+        <el-col :span="8">
+            <!--标题-->
+            <div class="login-title">
+                <div class="login-title-text">广药计服</div>
+                <div class="login-title-line"></div>
+            </div>
+            <!--登录表单-->
+            <div class="login-form">
+                <!--描述-->
+                <p class="login-form-description">账号登录</p>
+                <!--正式表单内容-->
+                <el-form ref="loginForm" :model="loginForm" :rules="rules">
+                    <el-form-item prop="username">
+                        <el-input
+                                class="login-form-input"
+                                placeholder="请输入用户名"
+                                v-model="loginForm.username">
+                            <i slot="prefix" class="iconfont icon-account"></i>
+                        </el-input>
+                    </el-form-item>
+                    <el-form-item prop="password">
+                        <el-input
+                                class="login-form-input"
+                                placeholder="请输入密码"
+                                v-model="loginForm.password"
+                                type="password"
+                                maxlength="20">
+                            <i slot="prefix" class="iconfont icon-yingckjian"></i>
+                        </el-input>
+                        <el-button type="text" class="login-form-forgetPass">忘记密码?</el-button>
+                    </el-form-item>
+                    <!--登录按钮-->
+                    <el-button type="primary" class="login-form-button" @click="onSubmit">登 录</el-button>
+                </el-form-item>
+            </div>
+            <!--注册-->
+            <div class="register">
+                <el-button class="register-button" type="info" plain>没有账号？立即注册</el-button>
+            </div>
+        </el-col>
+        <!--右边图片区域-->
+        <el-col :span="8"><div><img src="img/bg-right.png" class="bg-right">&nbsp;</div></el-col>
+    </el-row>
+    <!--底部图片-->
+    <img src="img/bg-bottom.png" class="bg-bottom">
+</div>
+</body>
+<!-- import Vue before Element -->
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+<!-- import JavaScript -->
+<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+<script>
+    new Vue({
+        el: '#app',
+        data: function() {
+            // 用户名的表单验证
+            var validateUsername = (rule, value, callback) => {
+                console.log(value)
+                if (value === '') {
+                    callback(new Error('请输入用户名'));
+                } else {
+                    var reg;
+                    if (value.indexOf("@") >= 0) {
+                        reg = /\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*/;
+                        if( !reg.test(value) ) {
+                            callback(new Error('请输入正确的邮箱'));
+                        }
+                    }
+                    else {
+                        reg = /^(0|86|17951)?(13[0-9]|15[012356789]|166|17[3678]|18[0-9]|14[57])[0-9]{8}$/;
+                        if( !reg.test(value) ) {
+                            callback(new Error('请输入正确的手机号'));
+                        }
+                    }
+                    callback();
+                }
+            };
+            return {
+                loginForm: {
+                    username: '',
+                    password: ''
+                },
+                rules: {
+                    username: [
+                        { validator: validateUsername, trigger: 'blur' }
+                    ],
+                    password: [
+                        { required: true, message: '请输入密码', trigger: 'blur' },
+                        { min: 4, max: 20, message: '长度在 4 到 20 个字符', trigger: 'blur' }
+                    ]
+                }
+            }
+        },
+        methods: {
+            // 点击了登录
+            onSubmit() {
+                this.$refs["loginForm"].validate((valid) => {
+                    if (valid) {
+                        console.log("通过表单验证");
+                    } else {
+                         return false;
+                    }
+                 });
+            }
+        }
+    })
+
+</script>
+</html>
