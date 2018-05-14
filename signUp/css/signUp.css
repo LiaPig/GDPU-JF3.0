@@ -18,8 +18,13 @@ body {
     margin-top: .2rem;
     height: 100%;
     width: 1rem;
-    background: #409eff;
     border-radius: 5px;
+    border-color: #E4E7ED;
+    background: #409eff;
+}
+.header .logo img {
+    width: 100%;
+    height: 100%;
 }
 .header .title-group {
     position: relative;
@@ -98,13 +103,19 @@ body {
     width: 3rem;
     height: 3rem;
     margin-left: 30px;
-    background: #409eff;
+    background: #E4E7ED;
+}
+.container .qrcode-img img {
+    margin: 1% 1% 1% 1%;
+    width: 98%;
+    height: auto;
 }
 .container .qrcode-description {
     display: inline-block;
     width: 100%;
-    margin-left: calc(1.5rem - 38px);
+    margin-left: calc(1.5rem - 30px);
     color: #727b8b;
+    font-size: 12px;
 }
 .container .department {
     float: left;
@@ -129,7 +140,7 @@ body {
     line-height: 28px;
     color: #6c778a;
 }
-.container .container .description p span, .department-description-text span {
+.container .description p span, .container .department-description-text span {
     color: #409eff;
 }
 .container .form {

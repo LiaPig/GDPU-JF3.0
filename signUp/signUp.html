@@ -14,7 +14,7 @@
         <!--logo-->
         <div class="logo">
             <!--这里放logo图-->
-            <div class="img"></div>
+            <!--<img src="img/logo-gdpujf.png">-->
         </div>
         <!--标题-->
         <div class="title-group">
@@ -35,7 +35,9 @@
                 <p>广药计服，全称<span>“广药计算机学生服务队”</span>，是一支由学生工作部（处）与医药信息工程学院联合组织的为在校师生进行电脑义务维修服务的学生技术团队，有别于其他学生组织。修机是我们最主要的一项服务，有电脑问题的地方，时常能看到我们的身影。秉着“服务于你，教育于我——在服务中学习，在教育中进取！”的工作宗旨。我们已经为全校师生解决过各种电脑问题，凭借优良的服务，计服获得师生们的一致好评！</p>
                 <p>计服并不止于“一支学生服务队”这么简单呢！计服为广药各部门建设网站和维护，并在2014年，开发<span>广东药学院官网</span>，同年，计服两支参赛队伍在网设决赛中获取<span>第一名</span>和<span>第三名</span>。2015年，再次卫冕网设决赛的<span>一等奖</span>。当然，除网站以外，我们还专注最热门领域的培训：电脑维修、Photoshop、After Effects、Adobe Illustrator、Prezi以及办公软件的使用等课程哦~</p>
                 <p>更多资讯请关注微信公众号：</p>
-                <div class="qrcode-img"></div>
+                <div class="qrcode-img">
+                    <img src="./img/qrcode.jpg">
+                </div>
                 <span class="qrcode-description">广药计算机学生服务队</span>
             </div>
         </div>
@@ -199,7 +201,7 @@
             methods: {
                 onSubmit() {
                     // 表单验证
-                    this.$refs["form"].validate((valid) => {
+                    this.$refs["form"].validate(function (valid) {
                         if (valid) {
                             alert('submit!');
                             // 1.将loading状态改为true
