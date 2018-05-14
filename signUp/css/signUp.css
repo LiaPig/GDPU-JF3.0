@@ -1,0 +1,154 @@
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: #eeeeec;
+}
+/*头部*/
+.header {
+    position: fixed;
+    height: 1rem;
+    width: 100%;
+    background: #222222;
+    z-index: 9;
+}
+.header .logo {
+    float: left;
+    margin-left: .2rem;
+    margin-top: .2rem;
+    height: 100%;
+    width: 1rem;
+    background: #409eff;
+    border-radius: 5px;
+}
+.header .title-group {
+    position: relative;
+    float: left;
+    height: 100%;
+    width: 80%;
+    padding-left: .2rem;
+    text-align: left;
+}
+.header .title-group .title-cn {
+    position: absolute;
+    top: .3rem;
+    height: .3rem;
+    line-height: .3rem;
+    display: inline-block;
+    font-size: .3rem;
+    color: #ffffff;
+}
+.header .title-group .title-en {
+    position: absolute;
+    top: calc(.3rem + .3rem);
+    font-size: .2rem;
+    color: #acafb3;
+}
+/*中间内容*/
+.container {
+    padding-top: 1rem;
+    top: 1rem;
+    width: 100%;
+    max-width: 640px;
+    margin: 0 auto;
+    background: #ffffff;
+    /*border: 1px solid #ffffff;*/
+    /*border-left: 1px solid #99a9bf;*/
+}
+.container .logo {
+    float: left;
+    display: inline-block;
+    width: 100%;
+    height: auto;
+}
+.container .logo img {
+    width: 100%;
+    height: auto;
+}
+.container .title {
+    float: left;
+    display: inline-block;
+    width: calc(100% - 5px - .2rem - .2rem);
+    margin: .1rem 0 .2rem .2rem;
+    padding-left: .2rem;
+    height: 30px;
+    line-height: 30px;
+    font-size: 26px;
+    text-align: left;
+    border-left: 5px solid #409eff;
+}
+.container .description {
+    float: left;
+    padding: 0 10px 0 10px;
+    display: inline-block;
+    width: calc(100% - 20px);
+    font-size: 14px;
+    line-height: 28px;
+    text-align: left;
+}
+.container .description p {
+    float: left;
+    width: 100%;
+    text-indent: 30px;
+    color: #6c778a;
+}
+.container .qrcode-img {
+    float: left;
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+    margin-left: 30px;
+    background: #409eff;
+}
+.container .qrcode-description {
+    display: inline-block;
+    width: 100%;
+    margin-left: calc(1.5rem - 38px);
+    color: #727b8b;
+}
+.container .department {
+    float: left;
+    width: 100%;
+    border-top: 8px solid #eeeeec;
+    padding: .2rem 0 .2rem 0;
+}
+.container .department-description {
+    float: left;
+    width: 100%;
+    font-size: 14px;
+}
+.container .department-description-title {
+    margin-top: .5rem;
+    font-size: 28px;
+    color: #409eff;
+}
+.container .department-description-text {
+    padding: 0 10px 0 10px;
+    text-align: left;
+    text-indent: 30px;
+    line-height: 28px;
+    color: #6c778a;
+}
+.container .container .description p span, .department-description-text span {
+    color: #409eff;
+}
+.container .form {
+    float: left;
+    width: 100%;
+    border-top: 8px solid #eeeeec;
+    padding: .2rem 0 .2rem 0;
+}
+.container .form-container {
+    float: left;
+    width: calc(100% - .4rem - 20px);
+    margin-left: .2rem;
+    padding: 20px 10px 20px 10px;
+}
+
+.clear {
+    clear: both;
+}
+
+.border {
+    border: 1px solid red;
+}
