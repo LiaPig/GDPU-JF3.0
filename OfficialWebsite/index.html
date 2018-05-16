@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页-广药计服3.0</title>
+    <link rel="stylesheet" href="./assets/css/lib/normalize.css">
+    <link rel="stylesheet" href="./assets/css/lib/boostrap.min.css">
+    <link rel="stylesheet" href="./assets/css/common.css">
+</head>
+<body>
+     <div class="jf-footer">
+         <div class="row">
+             <div class="jf-footer-left col-xs-3 col-md-3">
+                <div class="row">
+                    <div class="col-xs-2 col-md-4"></div>
+                    <div class="col-xs-10 col-md-8">
+                        <div class="jf-footer-left-logo">
+                            <!--这里放图片-->
+                            <div class="img"></div>
+                        </div>
+                        <div class="jf-footer-left-logo-description">广药计算机学生服务队</div>
+                        <div class="jf-footer-left-icons">
+                            <div class="jf-footer-left-icons-icon">
+                                <div class="img">&nbsp;</div>
+                            </div>
+                            <div class="jf-footer-left-icons-icon">
+                                <div class="img">&nbsp;</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+             </div>
+             <div class="jf-footer-center col-xs-6 col-md-6">
+                <div class="row">
+                    <div class="col-xs-1 col-md-1"></div>
+                    <div class="col-xs-10 col-md-10">
+                        <div class="row">
+                            <div class="col-xs-4 col-md-4">
+                                <div class="jf-footer-center-title">社团概况</div>
+                                <div class="jf-footer-center-title-line"></div>
+                                <a class="jf-footer-center-text">计服简介</a>
+                                <a class="jf-footer-center-text">技术部简介</a>
+                                <a class="jf-footer-center-text">网络部简介</a>
+                                <a class="jf-footer-center-text">策划部简介</a>
+                            </div>
+                            <div class="col-xs-4 col-md-4">2</div>
+                            <div class="col-xs-4 col-md-4">3</div>
+                        </div>
+                    </div>
+                </div>
+             </div>
+             <div class="jf-footer-right col-xs-3 col-md-3">
+                 <div class="">hello</div>
+             </div>
+
+             <div class="clear"></div>
+         </div>
+     </div>
+</body>
+<script rel="script" src="./assets/js/lib/jquery.min.js"></script>
+<script rel="script" src="./assets/js/lib/bootstrap.js"></script>
+<script rel="script" src="./assets/js/common.js"></script>
+<!--自适应脚本-->
+<script>
+    // 设置页面rem大小
+    // 以设计图( 750*1334 )尺寸宽度作为参考标准
+    ;
+    (function (doc, win) {
+        var max = 750,
+            docEl = doc.documentElement,
+            // 判断有没有‘orientationchange’(手机的竖屏横屏切换)事件,有就行，没就要用resize了
+            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+            // 计算html的font-size该为多少
+            recalc = function () {
+                // 获取当前设备可见区域宽度
+                var clientWidth = docEl.clientWidth;
+                // 为0或者不存在就返回
+                if (!clientWidth) return;
+                if (clientWidth >= max) {
+                    // 只要比设计图的宽度大，都为100了
+                    docEl.style.fontSize = '100px';
+                } else {
+                    // 让html的font-size等于这个这个公式算出来的
+                    docEl.style.fontSize = 100 * clientWidth / max + 'px';
+                }
+            };
+        // document没有增加事件监听的就可以返回退出函数了
+        if (!doc.addEventListener) return;
+        // 给window添加监听事件，只要横屏竖屏发生切换，就重新计算font-size值
+        win.addEventListener(resizeEvt, recalc, false);
+        // 增加事件监听：当dom元素加载的时候触发函数计算font-size的值
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+    })(document, window);
+</script>
+</html>
