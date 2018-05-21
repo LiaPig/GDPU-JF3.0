@@ -6,6 +6,7 @@
     background: #2f3238;
     color: #727b8b;
 }
+/*头部左边logo*/
 .jf-header-logo {
     height: .8rem;
 }
@@ -15,6 +16,7 @@
     height: 70%;
     width: auto;
 }
+/*头部右边导航条*/
 .jf-header-nav {
     float: right;
     height: .8rem;
@@ -82,7 +84,7 @@
     height: 1px;
     background: #ffffff;
 }
-
+/*底部左边logo*/
 .jf-footer-left {
     display: inline-block;
     height: 100%;
@@ -108,7 +110,7 @@
     width: .4rem;
     margin-right: .2rem;
 }
-
+/*底部中间跳转区域*/
 .jf-footer-center {
     display: inline-block;
     float: left;
@@ -124,7 +126,7 @@
 .jf-footer-center-text:hover {
     color: #409eff;
 }
-
+/*底部右边二维码*/
 .jf-footer-right {
     display: inline-block;
     float: left;
@@ -144,22 +146,23 @@
 }
 
 
-
+/*清除浮动*/
 .clear {
     clear: both;
 }
+/*没有边框*/
 .none-border {
-    border: none;
+    border: none !important;
 }
+/*占位的img背景*/
 .img {
     display: inline-block;
     width: 100%;
     height: 100%;
     background: #409eff;
 }
+/*红色边框*/
 .border {
     border: 1px solid red;
 }
-.border-none {
-    border: none !important;
-}
+
