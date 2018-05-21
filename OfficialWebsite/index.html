@@ -5,7 +5,9 @@
     <title>首页-广药计服3.0</title>
     <link rel="stylesheet" href="./assets/css/lib/normalize.css">
     <link rel="stylesheet" href="./assets/css/lib/boostrap.min.css">
+    <link rel="stylesheet" href="./assets/css/lib/swiper-4.2.2.min.css">
     <link rel="stylesheet" href="./assets/css/common.css">
+    <link rel="stylesheet" href="./assets/css/home/index.css">
 </head>
 <body>
     <!--头部-->
@@ -41,8 +43,27 @@
             </div>
         </div>
     </div>
-    <div class="">
-        1231
+    <div class="jf-home">
+        <div class="row">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./assets/img/test/1.jpg" class="img-responsive">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/img/test/fpic5101.jpg">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/img/test/weare.jpg">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/img/test/微信图片_20180518160614.png">
+                    </div>
+                </div>
+                <!-- 如果需要滚动条 -->
+                <div class="swiper-scrollbar"></div>
+            </div>
+        </div>
     </div>
     <!--底部-->
     <div class="jf-footer">
@@ -212,6 +233,7 @@
 </body>
 <script rel="script" src="./assets/js/lib/jquery.min.js"></script>
 <script rel="script" src="./assets/js/lib/bootstrap.js"></script>
+<script rel="script" src="./assets/js/lib/swiper-4.2.2.min.js"></script>
 <script rel="script" src="./assets/js/common.js"></script>
 <!--自适应脚本-->
 <script>
@@ -244,5 +266,25 @@
         // 增加事件监听：当dom元素加载的时候触发函数计算font-size的值
         doc.addEventListener('DOMContentLoaded', recalc, false);
     })(document, window);
+</script>
+<!--轮播图脚本-->
+<script>
+    var mySwiper = new Swiper ('.swiper-container', {
+        direction: 'horizontal',
+        loop: true,
+        autoplay:true,
+        speed:300,
+
+        // 如果需要前进后退按钮
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+        // 如果需要滚动条
+        scrollbar: {
+            el: '.swiper-scrollbar',
+        },
+    })
 </script>
 </html>

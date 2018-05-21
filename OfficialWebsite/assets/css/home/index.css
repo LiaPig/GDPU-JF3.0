@@ -1,0 +1,15 @@
+/*主页的样式*/
+.jf-home {
+    width: 100%;
+    overflow-x: hidden;
+}
+.swiper-container {
+    height: 800px;
+    overflow: hidden;
+}
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    /*margin: 0 auto;*/
+    /*-webkit-background-size: 10;*/
+}
