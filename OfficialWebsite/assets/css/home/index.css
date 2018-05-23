@@ -46,7 +46,7 @@
     color: #a2a2a2;;
 }
 
-/*其他服务*/
+/*提供的服务*/
 .jf-home-services-wrap {
     position: relative;
     margin-top: 20px;
@@ -69,7 +69,6 @@
     font-size: 50px;
     color: #fff;
     line-height: 300px;
-    /*background: pink;*/
 }
 .jf-home-services-icon:hover {
     font-size: 1rem;
@@ -92,4 +91,35 @@
     margin-bottom: 50px;
     text-align: center;
     color: #a2a2a2;
+}
+
+/*部门简介*/
+.jf-home-partment-container {
+    margin: 10px 10px 50px 10px;
+    background: #2f3238;
+}
+.jf-home-partment-img {
+    display: inline-block;
+    width: 100%;
+    padding: calc(50% - 10px) 0;
+    background: #409eff;
+}
+.jf-home-partment-title {
+    padding: 0 10px 10px 10px;
+    color: #fff;
+    font-size: 24px;
+}
+.jf-home-partment-title>span {
+    display: inline-block;
+    margin-right: 10px;
+    width: 3px;
+    height: 18px;
+    background: #fff;
+}
+.jf-home-partment-description {
+    padding: 0 10px 20px 10px;
+    color: #a2a2a2;
+}
+.jf-home-partment-description>span {
+    color: #fff;
 }
