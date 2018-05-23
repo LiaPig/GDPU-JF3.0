@@ -16,12 +16,11 @@
 }
 /*模块区域的标题样式*/
 .jf-home-block-title {
-    margin: 60px 0 30px 0;
-    font-size: 4em;
+    margin: 60px 0 10px 0;
+    font-size: 62px;
     font-weight: 300;
     text-align: center;
     overflow: hidden;
-    margin-bottom: 70px;
 }
 .jf-home-block-title:before, .jf-home-block-title:after {
     content: "";
@@ -40,14 +39,20 @@
     left: 0.5em;
     margin-right: -42%;
 }
+.jf-home-block-description {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+    color: #a2a2a2;;
+}
 
 /*其他服务*/
 .jf-home-services-wrap {
     position: relative;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     width: 100%;
-    background: #409eff;
+    background: #2f3238;
     padding: 50% 0;
     border-radius: 100%;
     text-align: center;
@@ -67,7 +72,24 @@
     /*background: pink;*/
 }
 .jf-home-services-icon:hover {
-    /*position: absolute;*/
-    /*transform: translateY(-45%);*/
     font-size: 1rem;
+}
+.jf-home-services-title {
+    text-align: center;
+    color: #2f3238;
+    font-size: 18px;
+    font-weight: bold;
+}
+.jf-home-services-line {
+    margin-left: calc(50% - 20px);
+    display: inline-block;
+    height: 2px;
+    width: 40px;
+    background: #000;
+}
+.jf-home-services-description {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    text-align: center;
+    color: #a2a2a2;
 }
