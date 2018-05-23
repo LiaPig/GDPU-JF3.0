@@ -46,26 +46,27 @@
     </div>
     <div class="jf-home">
         <!--轮播图-->
-        <!--<div class="row">-->
-            <!--<div class="swiper-container">-->
-                <!--<div class="swiper-wrapper">-->
-                    <!--<div class="swiper-slide">-->
-                        <!--<img src="./assets/img/test/1.jpg" class="img-responsive">-->
-                    <!--</div>-->
-                    <!--<div class="swiper-slide">-->
-                        <!--<img src="./assets/img/test/fpic5101.jpg">-->
-                    <!--</div>-->
-                    <!--<div class="swiper-slide">-->
-                        <!--<img src="./assets/img/test/weare.jpg">-->
-                    <!--</div>-->
-                    <!--<div class="swiper-slide">-->
-                        <!--<img src="./assets/img/test/微信图片_20180518160614.png">-->
-                    <!--</div>-->
-                <!--</div>-->
-                <!--&lt;!&ndash; 如果需要滚动条 &ndash;&gt;-->
-                <!--<div class="swiper-scrollbar"></div>-->
-            <!--</div>-->
-        <!--</div>-->
+        <div class="row">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./assets/img/test/1.jpg" class="img-responsive">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/img/test/fpic5101.jpg">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/img/test/weare.jpg">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/img/test/微信图片_20180518160614.png">
+                    </div>
+                </div>
+                <!-- 如果需要滚动条 -->
+                <div class="swiper-scrollbar"></div>
+            </div>
+        </div>
+
         <!--区域： 提供服务-->
         <div class="row pc">
             <div class="col-md-2"></div>
@@ -117,7 +118,7 @@
             </div>
         </div>
         <!--区域： 部门简介-->
-        <div class="row pc">
+        <div class="row pc jf-home-department">
             <div class="col-md-2"></div>
             <div class="col-md-8">
                 <div class="jf-home-block-title">部门简介</div>
@@ -140,7 +141,7 @@
                             <div class="jf-home-partment-title">
                                 <span></span>网络部
                             </div>
-                            <p class="jf-home-partment-description">网络部致力于以技术为核心，为大学城校区各机关单位制作网页以及提供技术上的帮助。在这里你学到的是关于计算机技术的项目经验和设计的前沿技术、开发领域的<span>前端设计</span>与<span>后台支撑架构</span>的知识。或学习<span>PS、AE、AI</span>等等图像视频处理软件，专攻平面设计软件。培训课程体系涉IT最热门的领域：<span>网站建设、图像处理、视频制作</span>等。 至今已为学校开发多个机构网站，并在2014年获得广东药学院官网的开发权限。喜欢PS和网页设计的萌新们快来加入吧！</p>
+                            <p class="jf-home-partment-description">网络部致力于以技术为核心，为大学城校区各机关单位制作网页以及提供技术上的帮助。不仅能学到关于计算机技术的项目经验、开发领域的<span>前端设计</span>与<span>后台支撑架构</span>的知识。还能学习<span>PS、AE、AI</span>等等图像视频处理软件，专攻平面设计软件。培训课程体系涉IT最热门的领域：<span>网站建设、图像处理、视频制作</span>等。 至今已为学校开发多个机构网站，并在2014年获得广东药学院官网的开发权限。喜欢PS和网页设计的萌新们快来加入吧！</p>
                         </div>
                     </div>
                     <div class="col-md-4">
@@ -367,7 +368,7 @@
         direction: 'horizontal',
         loop: true,
         autoplay:true,
-        speed:300,
+        speed: 1000,
 
         // 如果需要前进后退按钮
         navigation: {

@@ -75,8 +75,8 @@
 }
 .jf-home-services-title {
     text-align: center;
-    color: #2f3238;
-    font-size: 18px;
+    color: #222;
+    font-size: 20px;
     font-weight: bold;
 }
 .jf-home-services-line {
@@ -94,6 +94,9 @@
 }
 
 /*部门简介*/
+.jf-home-department {
+    /*background: #efefef;*/
+}
 .jf-home-partment-container {
     margin: 10px 10px 50px 10px;
     background: #2f3238;
@@ -108,6 +111,7 @@
     padding: 0 10px 10px 10px;
     color: #fff;
     font-size: 24px;
+    font-weight: bold;
 }
 .jf-home-partment-title>span {
     display: inline-block;
@@ -120,6 +124,12 @@
     padding: 0 10px 20px 10px;
     color: #a2a2a2;
 }
+.jf-home-partment-description:hover {
+    color: #fff;
+}
 .jf-home-partment-description>span {
     color: #fff;
+}
+.jf-home-partment-description:hover>span {
+    color: #a2a2a2;
 }
