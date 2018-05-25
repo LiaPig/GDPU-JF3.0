@@ -69,7 +69,8 @@
 /*底部样式*/
 .jf-footer {
     width: 100%;
-    padding: 50px 20px 50px 20px;
+    overflow: hidden;
+    padding: 50px 0 50px 0;
     background: #2f3238;
     color: #727b8b;
 }
@@ -85,35 +86,12 @@
     background: #ffffff;
 }
 /*底部左边logo*/
-.jf-footer-left {
-    display: inline-block;
-    height: 100%;
-    border-right: 1px solid rgba(255,255,255,.1);
-}
-.jf-footer-left-logo {
-    height: 1rem;
-    width: 1.5rem;
-}
-.jf-footer-left-logo-description {
-    margin-top: .1rem;
-    margin-bottom: .1rem;
-    width: 100%;
-    font-size: .15rem;
-}
-.jf-footer-left-icons {
-    height: .4rem;
-}
-.jf-footer-left-icons-icon {
-    display: inline-block;
-    float: left;
-    height: .4rem;
-    width: .4rem;
-    margin-right: .2rem;
-}
+.jf-footer-left {}
 /*底部中间跳转区域*/
 .jf-footer-center {
     display: inline-block;
     float: left;
+    text-align: left;
     height: 1.8rem;
     border-right: 1px solid rgba(255,255,255,.1);
 }
@@ -144,7 +122,10 @@
     width: 1.1rem;
     text-align: center;
 }
-
+.jf-footer .copyright {
+    margin: 50px 0 0 0;
+    text-align: center;
+}
 
 /*清除浮动*/
 .clear {

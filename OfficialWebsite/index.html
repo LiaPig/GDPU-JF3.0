@@ -7,327 +7,303 @@
     <link rel="stylesheet" href="./assets/css/lib/boostrap.min.css">
     <link rel="stylesheet" href="./assets/css/lib/iconfont.css">
     <link rel="stylesheet" href="./assets/css/lib/swiper-4.2.2.min.css">
+    <link rel="stylesheet" href="./assets/css/lib/animate.css">
     <link rel="stylesheet" href="./assets/css/common.css">
     <link rel="stylesheet" href="./assets/css/home/index.css">
 </head>
 <body>
-    <!--头部-->
-    <div class="jf-header">
-        <div class="row pc">
-            <div class="col-md-2"></div>
-            <div class="col-md-8">
-                <div class="row">
-                    <div class="col-md-3 jf-header-logo">
-                        <div class="img"></div>
+<!--头部-->
+<div class="jf-header">
+    <div class="row pc">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <div class="row">
+                <div class="col-md-3 jf-header-logo">
+                    <div class="img"></div>
+                </div>
+                <div class="9">
+                    <ul class="jf-header-nav">
+                        <li class="li-active">
+                            <a href="#" class="a-active">首页</a>
+                        </li>
+                        <li class="fadeIn-underlinie">
+                            <a href="#">关于计服</a>
+                        </li>
+                        <li class="fadeIn-underlinie">
+                            <a href="#">计服公告</a>
+                        </li>
+                        <li class="fadeIn-underlinie">
+                            <a href="#">其他服务</a>
+                        </li>
+                        <li class="fadeIn-underlinie">
+                            <a href="#">电脑报障</a>
+                        </li>
+                        <li class="fadeIn-underlinie">
+                            <a href="#" class="none-border">加入我们</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!--中间内容-->
+<div class="jf-home">
+    <!--轮播图-->
+    <div class="row">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./assets/img/test/1.jpg" class="img-responsive">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./assets/img/test/fpic5101.jpg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./assets/img/test/weare.jpg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./assets/img/test/微信图片_20180518160614.png">
+                </div>
+            </div>
+            <!-- 如果需要滚动条 -->
+            <div class="swiper-scrollbar"></div>
+        </div>
+    </div>
+    <!--区域： 提供服务-->
+    <div class="row jf-home-services">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <div class="jf-home-block-title wow fadeInDown" data-wow-delay="0.5s">提供的服务</div>
+            <div class="jf-home-block-description wow fadeInDown" data-wow-delay="1s">服务于你，教育于我</div>
+            <div class="row">
+                <div class="col-md-3 wow fadeInDown" data-wow-delay="1.5s">
+                    <div class="jf-home-services-wrap">
+                        <i class="jf-home-services-icon iconfont icon-weixiugongju img-responsive"></i>
                     </div>
-                    <div class="9">
-                        <ul class="jf-header-nav">
-                            <li class="li-active">
-                                <a href="#" class="a-active">首页</a>
-                            </li>
-                            <li class="fadeIn-underlinie">
-                                <a href="#">关于计服</a>
-                            </li>
-                            <li class="fadeIn-underlinie">
-                                <a href="#">活动公告</a>
-                            </li>
-                            <li class="fadeIn-underlinie">
-                                <a href="#">电脑报障</a>
-                            </li>
-                            <li class="fadeIn-underlinie">
-                                <a href="#" class="none-border">其他服务</a>
-                            </li>
-                        </ul>
+                    <div class="jf-home-services-title">电脑维修</div>
+                    <div class="jf-home-services-line"></div>
+                    <div class="jf-home-services-description">
+                        简称修机，由技术部为广药师生提供计算机咨询、组装、软硬件维护、系统修复与优化、资料备份以及解决由非硬件问题引起的网络连接故障等服务，帮助老师和同学解决日常出现的电脑问题。
                     </div>
                 </div>
-
+                <div class="col-md-3 wow fadeInDown" data-wow-delay="2s">
+                    <div class="jf-home-services-wrap">
+                        <i class="jf-home-services-icon iconfont icon-wangzhan img-responsive"></i>
+                    </div>
+                    <div class="jf-home-services-title">网站开发</div>
+                    <div class="jf-home-services-line"></div>
+                    <div class="jf-home-services-description">
+                        由我们的网络部对外接老师们的网站开发建设项目，主要是为教育网站提供维护，更新和开发服务以及为大学城校区各机关单位制作网页设计和提供技术上的帮助等。（如广药官网的开发）
+                    </div>
+                </div>
+                <div class="col-md-3 wow fadeInDown" data-wow-delay="2.5s">
+                    <div class="jf-home-services-wrap">
+                        <i class="jf-home-services-icon iconfont icon-PPT img-responsive"></i>
+                    </div>
+                    <div class="jf-home-services-title">课件制作</div>
+                    <div class="jf-home-services-line"></div>
+                    <div class="jf-home-services-description">
+                        策划部的一项新增服务，致力于为老师和学生提供高品质，高质量的PPT/课件。主要由我们的策划部为有需要的老师提供PPT/课件的制作服务，也为有需要的学生代制作PPT或Prezi文件。
+                    </div>
+                </div>
+                <div class="col-md-3 wow fadeInDown" data-wow-delay="3s">
+                    <div class="jf-home-services-wrap">
+                        <i class="jf-home-services-icon iconfont icon-laptop img-responsive"></i>
+                    </div>
+                    <div class="jf-home-services-title">电脑代购</div>
+                    <div class="jf-home-services-line"></div>
+                    <div class="jf-home-services-description">
+                        基于现下一些大学生对于电脑笔记本的陌生与不了解的现状，由我们的技术部向广大学生提供免费的专业咨询服务，助力学生更好更快选择合适的、价格优惠且有保障的笔记本电脑。
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <div class="jf-home">
-        <!--轮播图-->
-        <div class="row">
-            <div class="swiper-container">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <img src="./assets/img/test/1.jpg" class="img-responsive">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="./assets/img/test/fpic5101.jpg">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="./assets/img/test/weare.jpg">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="./assets/img/test/微信图片_20180518160614.png">
+    <!--区域： 部门简介-->
+    <div class="row jf-home-department">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <div class="jf-home-block-title wow fadeInDown" data-wow-delay="1s">部门简介</div>
+            <div class="jf-home-block-description wow fadeInDown" data-wow-delay="1.5s">欢迎加入我们</div>
+            <div class="row">
+                <div class="col-md-4 wow rollIn center" data-wow-delay="3s">
+                    <div class="jf-home-partment-container">
+                        <div class="jf-home-partment-img">
+                        </div>
+                        <div class="jf-home-partment-title">
+                            <span></span>技术部
+                        </div>
+                        <p class="jf-home-partment-description">计服的核心战力，拥有丰富的硬件知识和软件问题解决方案,被誉为计服之魂。主要负责<span>电脑故障维修</span>和<span>代购服务</span>，校园日常电脑问题全然不在话下，可以解决多种电脑疑难杂症和网络故障，能直接到学院各单位老师处进行服务。无论是生活区还是教学区，有电脑问题的地方时常能看到他们的身影。想要成为传说中独当一面的修机男（女）神吗？想要提升你的电脑知识与技能吗？想要帮助更多有需要的人吗？技术部欢迎你的加入！</p>
                     </div>
                 </div>
-                <!-- 如果需要滚动条 -->
-                <div class="swiper-scrollbar"></div>
-            </div>
-        </div>
-
-        <!--区域： 提供服务-->
-        <div class="row pc">
-            <div class="col-md-2"></div>
-            <div class="col-md-8">
-                <div class="jf-home-block-title">提供的服务</div>
-                <div class="jf-home-block-description">服务于你，教育于我</div>
-                <div class="row">
-                    <div class="col-md-3">
-                        <div class="jf-home-services-wrap">
-                            <i class="jf-home-services-icon iconfont icon-weixiugongju img-responsive"></i>
+                <div class="col-md-4 wow rollIn center" data-wow-delay="2.5s">
+                    <div class="jf-home-partment-container">
+                        <div class="jf-home-partment-img">
                         </div>
-                        <div class="jf-home-services-title">电脑维修</div>
-                        <div class="jf-home-services-line"></div>
-                        <div class="jf-home-services-description">
-                            简称修机，由技术部为广药师生提供计算机咨询、组装、软硬件维护、系统修复与优化、资料备份以及解决由非硬件问题引起的网络连接故障等服务，帮助老师和同学解决日常出现的电脑问题。
+                        <div class="jf-home-partment-title">
+                            <span></span>网络部
                         </div>
+                        <p class="jf-home-partment-description">网络部致力于以技术为核心，为大学城校区各机关单位制作网页以及提供技术上的帮助。不仅能学到关于计算机技术的项目经验、开发领域的<span>前端设计</span>与<span>后台支撑架构</span>的知识。还能学习<span>PS、AE、AI</span>等等图像视频处理软件，专攻平面设计软件。培训课程体系涉IT最热门的领域：<span>网站建设、图像处理、视频制作</span>等。 至今已为学校开发多个机构网站，并在2014年获得广东药学院官网的开发权限。喜欢PS和网页设计的萌新们快加入吧！</p>
                     </div>
-                    <div class="col-md-3">
-                        <div class="jf-home-services-wrap">
-                            <i class="jf-home-services-icon iconfont icon-wangzhan img-responsive"></i>
+                </div>
+                <div class="col-md-4 wow rollIn center" data-wow-delay="2s">
+                    <div class="jf-home-partment-container">
+                        <div class="jf-home-partment-img">
                         </div>
-                        <div class="jf-home-services-title">网站开发</div>
-                        <div class="jf-home-services-line"></div>
-                        <div class="jf-home-services-description">
-                            由我们的网络部对外接老师们的网站开发建设项目，主要是为教育网站提供维护，更新和开发服务以及为大学城校区各机关单位制作网页设计和提供技术上的帮助等。（如广药官网的开发）
+                        <div class="jf-home-partment-title">
+                            <span></span>策划部
                         </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="jf-home-services-wrap">
-                            <i class="jf-home-services-icon iconfont icon-PPT img-responsive"></i>
-                        </div>
-                        <div class="jf-home-services-title">课件制作</div>
-                        <div class="jf-home-services-line"></div>
-                        <div class="jf-home-services-description">
-                            策划部的一项新增服务，致力于为老师和学生提供高品质，高质量的PPT/课件。主要由我们的策划部为有需要的老师提供PPT/课件的制作服务，也为有需要的学生代制作PPT或Prezi文件。
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="jf-home-services-wrap">
-                            <i class="jf-home-services-icon iconfont icon-laptop img-responsive"></i>
-                        </div>
-                        <div class="jf-home-services-title">电脑代购</div>
-                        <div class="jf-home-services-line"></div>
-                        <div class="jf-home-services-description">
-                            基于现下一些大学生对于电脑笔记本的陌生与不了解的现状，由我们的技术部向广大学生提供免费的专业咨询服务，助力学生更好更快选择合适的、价格优惠且有保障的笔记本电脑。
-                        </div>
+                        <p class="jf-home-partment-description">策划部的魅力在于创意造就无限的可能，是计服各种活动的策划者和创新者！策划部是个特殊的部门，在这个部门你能学到三个部门的知识：策划部的策划，网络部的编程，技术部的维修。同时，还负责<span>PPT/Prezi的制作</span>和<span>公众号的运营维护</span>。你想在学到电脑技术的同时，锻炼自己的组织策划能力、提升自己的表达沟通能力吗？这里有最全方位的能力辅导，最全面的提升，如果你想全面的提高自己的各项能力，那就来策划部吧！</p>
                     </div>
                 </div>
             </div>
         </div>
-        <!--区域： 部门简介-->
-        <div class="row pc jf-home-department">
-            <div class="col-md-2"></div>
-            <div class="col-md-8">
-                <div class="jf-home-block-title">部门简介</div>
-                <div class="jf-home-block-description">欢迎加入我们</div>
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="jf-home-partment-container">
-                            <div class="jf-home-partment-img">
-                            </div>
-                            <div class="jf-home-partment-title">
-                                <span></span>技术部
-                            </div>
-                            <p class="jf-home-partment-description">计服的核心战力，拥有丰富的硬件知识和软件问题解决方案,被誉为计服之魂。主要负责<span>电脑故障维修</span>和<span>代购服务</span>，校园日常电脑问题全然不在话下，可以解决多种电脑疑难杂症和网络故障，能直接到学院各单位老师处进行服务。无论是生活区还是教学区，有电脑问题的地方时常能看到他们的身影。想要成为传说中独当一面的修机男（女）神吗？想要提升你的电脑知识与技能吗？想要帮助更多有需要的人吗？技术部欢迎你的加入！</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="jf-home-partment-container">
-                            <div class="jf-home-partment-img">
-                            </div>
-                            <div class="jf-home-partment-title">
-                                <span></span>网络部
-                            </div>
-                            <p class="jf-home-partment-description">网络部致力于以技术为核心，为大学城校区各机关单位制作网页以及提供技术上的帮助。不仅能学到关于计算机技术的项目经验、开发领域的<span>前端设计</span>与<span>后台支撑架构</span>的知识。还能学习<span>PS、AE、AI</span>等等图像视频处理软件，专攻平面设计软件。培训课程体系涉IT最热门的领域：<span>网站建设、图像处理、视频制作</span>等。 至今已为学校开发多个机构网站，并在2014年获得广东药学院官网的开发权限。喜欢PS和网页设计的萌新们快来加入吧！</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="jf-home-partment-container">
-                            <div class="jf-home-partment-img">
-                            </div>
-                            <div class="jf-home-partment-title">
-                                <span></span>策划部
-                            </div>
-                            <p class="jf-home-partment-description">策划部的魅力在于创意造就无限的可能，是计服各种活动的策划者和创新者！策划部是个特殊的部门，在这个部门你能学到三个部门的知识：策划部的策划，网络部的编程，技术部的维修。同时，还负责<span>PPT/Prezi的制作</span>和<span>公众号的运营维护</span>。你想在学到电脑技术的同时，锻炼自己的组织策划能力、提升自己的表达沟通能力吗？这里有最全方位的能力辅导，最全面的提升，如果你想全面的提高自己的各项能力，那就来策划部吧！</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
     </div>
-    <!--底部-->
-    <div class="jf-footer">
-         <div class="row">
-             <!--pc端显示-->
-             <div class="pc">
-                 <!--底部左边-->
-                 <div class="jf-footer-left col-md-3">
-                     <div class="row">
-                         <div class="col-xs-2 col-md-4"></div>
-                         <div class="col-xs-10 col-md-8">
-                             <div class="jf-footer-left-logo">
-                                 <!--这里放图片-->
-                                 <div class="img"></div>
-                             </div>
-                             <div class="jf-footer-left-logo-description">广药计算机学生服务队</div>
-                             <div class="jf-footer-left-icons">
-                                 <div class="jf-footer-left-icons-icon">
-                                     <div class="img">&nbsp;</div>
-                                 </div>
-                                 <div class="jf-footer-left-icons-icon">
-                                     <div class="img">&nbsp;</div>
-                                 </div>
-                             </div>
-                         </div>
-                     </div>
-                 </div>
-                 <!--底部中间-->
-                 <div class="jf-footer-center col-md-6">
-                     <div class="row">
-                         <div class="col-xs-2 col-md-1"></div>
-                         <div class="col-xs-8 col-md-10">
-                             <div class="row">
-                                 <!--社团概况-->
-                                 <div class="col-xs-4 col-md-5">
-                                     <div class="jf-footer-title">社团概况</div>
-                                     <div class="jf-footer-title-line"></div>
-                                     <a class="jf-footer-center-text">计服简介</a>
-                                     <a class="jf-footer-center-text">技术部简介</a>
-                                     <a class="jf-footer-center-text">网络部简介</a>
-                                     <a class="jf-footer-center-text">策划部简介</a>
-                                 </div>
-                                 <!--服务提供-->
-                                 <div class="col-xs-4 col-md-4">
-                                     <div class="jf-footer-title">服务提供</div>
-                                     <div class="jf-footer-title-line"></div>
-                                     <a class="jf-footer-center-text">电脑维修</a>
-                                     <a class="jf-footer-center-text">电脑代购</a>
-                                     <a class="jf-footer-center-text">WEB开发</a>
-                                 </div>
-                                 <!--了解更多-->
-                                 <div class="col-xs-4 col-md-3">
-                                     <div class="jf-footer-title">了解更多</div>
-                                     <div class="jf-footer-title-line"></div>
-                                     <a class="jf-footer-center-text">最近活动</a>
-                                     <a class="jf-footer-center-text">联系我们</a>
-                                     <a class="jf-footer-center-text">加入我们</a>
-                                 </div>
-                             </div>
-                         </div>
-                     </div>
-                 </div>
-                 <!--底部右边-->
-                 <div class="col-xs-2"></div>
-                 <div class="jf-footer-right col-xs-6 col-md-3">
-                     <div class="row">
-                         <div class="col-xs-0 col-md-2"></div>
-                         <div class="col-xs-6 col-md-8">
-                             <div class="jf-footer-title">关注我们</div>
-                             <div class="jf-footer-title-line"></div>
-                             <div class="jf-footer-right-qrcode">
-                                 <!--这里放二维码-->
-                                 <img src="../signUp/img/qrcode.jpg" class="img">
-                                 <!--描述-->
-                                 <div class="jf-footer-right-description">计服微信公众号</div>
-                             </div>
-
-                         </div>
-                     </div>
-
-                 </div>
-                 <div class="clear"></div>
-             </div>
-             <!--移动端显示-->
-             <div class="mobile hidden">
-                 <!--第一行-->
-                 <div class="row">
-                     <!--底部中间-->
-                     <div class="">
-                         <div class="col-xs-2 col-md-1"></div>
-                         <div class="jf-footer-center col-xs-8 col-md-10 none-border">
-                             <div class="row">
-                                 <!--社团概况-->
-                                 <div class="col-xs-4 col-md-4">
-                                     <div class="jf-footer-title">社团概况</div>
-                                     <div class="jf-footer-title-line"></div>
-                                     <a class="jf-footer-center-text">计服简介</a>
-                                     <a class="jf-footer-center-text">技术部简介</a>
-                                     <a class="jf-footer-center-text">网络部简介</a>
-                                     <a class="jf-footer-center-text">策划部简介</a>
-                                 </div>
-                                 <!--服务提供-->
-                                 <div class="col-xs-4 col-md-4">
-                                     <div class="jf-footer-title">服务提供</div>
-                                     <div class="jf-footer-title-line"></div>
-                                     <a class="jf-footer-center-text">电脑维修</a>
-                                     <a class="jf-footer-center-text">电脑代购</a>
-                                     <a class="jf-footer-center-text">WEB开发</a>
-                                 </div>
-                                 <!--了解更多-->
-                                 <div class="col-xs-4 col-md-4">
-                                     <div class="jf-footer-title">了解更多</div>
-                                     <div class="jf-footer-title-line"></div>
-                                     <a class="jf-footer-center-text">最近活动</a>
-                                     <a class="jf-footer-center-text">联系我们</a>
-                                     <a class="jf-footer-center-text">加入我们</a>
-                                 </div>
-                             </div>
-                         </div>
-                     </div>
-                 </div>
-                 <!--第二行-->
-                <div class="row">
-                    <div class="col-xs-2"></div>
-                    <div class="jf-footer-right col-xs-8">
-                        <div class="row">
-                            <!--底部右边-->
-                            <div class="col-xs-4">
-                                <div class="jf-footer-title">关注我们</div>
-                                <div class="jf-footer-title-line"></div>
-                                <div class="jf-footer-right-qrcode">
-                                    <!--这里放二维码-->
-                                    <img src="../signUp/img/qrcode.jpg" class="img">
-                                    <!--描述-->
-                                    <div class="jf-footer-right-description">计服微信公众号</div>
-                                </div>
-
+    <!--区域： 计服公告-->
+    <div class="row jf-home-news">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <div class="jf-home-block-title wow fadeInDown" data-wow-delay="1s">计服公告</div>
+            <div class="jf-home-block-description wow fadeInDown" data-wow-delay="1.5s">最新动态，实时掌握</div>
+            <div class="row wow fadeInDown" data-wow-delay="2s">
+                <div class="col-md-6 wow flip" data-wow-delay="2.5s" style="border-right: 1px solid #ccc">
+                    <div class="jf-home-news-class">
+                        <div class="jf-home-news-title">
+                            <h4>计服课堂</h4>
+                            <a class="more" href="javascript:;">更多></a>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="jf-home-news-lists">
+                            <div class="jf-home-news-list">
+                                <a href="javascript:;" class="new-title">广药：校园网inode常见故障及处理方法</a>
+                                <p class="new-date">2016年03月02日</p>
                             </div>
-                            <!--底部左边-->
-                            <div class="jf-footer-left mobile col-xs-6 none-border">
-                                <div class="row">
-                                    <div class="col-xs-10 col-md-8">
-                                        <div class="jf-footer-left-logo">
-                                            <!--这里放图片-->
-                                            <div class="img"></div>
-                                        </div>
-                                        <div class="jf-footer-left-logo-description">广药计算机学生服务队</div>
-                                        <div class="jf-footer-left-icons">
-                                            <div class="jf-footer-left-icons-icon">
-                                                <div class="img">&nbsp;</div>
-                                            </div>
-                                            <div class="jf-footer-left-icons-icon">
-                                                <div class="img">&nbsp;</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div class="jf-home-news-list">
+                                <a href="javascript:;" class="new-title">windows系统重装菜鸟教程</a>
+                                <span class="new-date">2016年03月02日</span>
+                            </div>
+                            <div class="jf-home-news-list">
+                                <a href="javascript:;" class="new-title">主板Bios报警</a>
+                                <span class="new-date">2015年09月19日</span>
+                            </div>
+                            <div class="jf-home-news-list">
+                                <a href="javascript:;" class="new-title">能上QQ，不能打开网页</a>
+                                <span class="new-date">2015年09月19日</span>
+                            </div>
+                            <div class="jf-home-news-list">
+                                <a href="javascript:;" class="new-title">mac地址绑定失败，密码错误</a>
+                                <span class="new-date">2016年03月09日</span>
                             </div>
                         </div>
-
                     </div>
                 </div>
-                 <div class="clear"></div>
-             </div>
-         </div>
-     </div>
+                <div class="col-md-6 wow flip" data-wow-delay="2.5s">
+                    <div class="jf-home-news-activity">
+                        <div class="jf-home-news-title">
+                            <h4>最近活动</h4>
+                            <a class="more" href="javascript:;">更多></a>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="jf-home-news-list">
+                            <a href="javascript:;" class="new-title">计算机夏季联合义修活动</a>
+                            <p class="new-date">2018年04月20日</p>
+                        </div>
+                        <div class="jf-home-news-list">
+                            <a href="javascript:;" class="new-title">计服动员大会</a>
+                            <p class="new-date">2018年03月29日</p>
+                        </div>
+                    </div>
+                    <div class="jf-home-news-share">
+                        <div class="jf-home-news-title">
+                            <h4>资源共享</h4>
+                            <a class="more" href="javascript:;">更多></a>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="jf-home-news-list">
+                            <a href="javascript:;" class="new-title">重装系统培训课相关资料</a>
+                            <p class="new-date">2015年11月27日</p>
+                        </div>
+                        <div class="jf-home-news-list">
+                            <a href="javascript:;" class="new-title">重装系统培训课相关资料</a>
+                            <p class="new-date">2015年11月27日</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--底部-->
+<div class="jf-footer">
+    <div class="row">
+        <!--底部左边-->
+        <div class="jf-footer-left col-md-2"></div>
+        <!--底部中间-->
+        <div class="jf-footer-center col-md-4">
+            <div class="row">
+                <div class="col-xs-2 col-md-1"></div>
+                <div class="col-xs-8 col-md-10">
+                    <div class="row">
+                        <!--社团概况-->
+                        <div class="col-xs-4 col-md-4">
+                            <div class="jf-footer-title">社团概况</div>
+                            <div class="jf-footer-title-line"></div>
+                            <a class="jf-footer-center-text">计服简介</a>
+                            <a class="jf-footer-center-text">技术部简介</a>
+                            <a class="jf-footer-center-text">网络部简介</a>
+                            <a class="jf-footer-center-text">策划部简介</a>
+                        </div>
+                        <!--服务提供-->
+                        <div class="col-xs-4 col-md-4">
+                            <div class="jf-footer-title">服务提供</div>
+                            <div class="jf-footer-title-line"></div>
+                            <a class="jf-footer-center-text">电脑维修</a>
+                            <a class="jf-footer-center-text">电脑代购</a>
+                            <a class="jf-footer-center-text">PPT制作</a>
+                            <a class="jf-footer-center-text">WEB开发</a>
+                        </div>
+                        <!--了解更多-->
+                        <div class="col-xs-4 col-md-4">
+                            <div class="jf-footer-title">了解更多</div>
+                            <div class="jf-footer-title-line"></div>
+                            <a class="jf-footer-center-text">技术分享</a>
+                            <a class="jf-footer-center-text">最近活动</a>
+                            <a class="jf-footer-center-text">联系我们</a>
+                            <a class="jf-footer-center-text">加入我们</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--底部右边-->
+        <div class="jf-footer-right col-md-3">
+            <div class="row">
+                <div class="col-xs-0 col-md-2"></div>
+                <div class="col-xs-6 col-md-8">
+                    <div class="jf-footer-title">关注我们</div>
+                    <div class="jf-footer-title-line"></div>
+                    <div class="jf-footer-right-qrcode">
+                        <!--这里放二维码-->
+                        <img src="../signUp/img/qrcode.jpg" class="img">
+                        <!--描述-->
+                        <div class="jf-footer-right-description">计服微信公众号</div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="row copyright">网站备案号：  © 2014 gdpujf.duapp.com 京ICP备13017353号-3 京公网安备11010802012357号</div>
+</div>
 </body>
 <script rel="script" src="./assets/js/lib/jquery.min.js"></script>
 <script rel="script" src="./assets/js/lib/bootstrap.js"></script>
 <script rel="script" src="./assets/js/lib/swiper-4.2.2.min.js"></script>
+<script rel="script" src="./assets/js/lib/wow.min.js"></script>
 <script rel="script" src="./assets/js/common.js"></script>
 <script rel="script" src="./assets/js/home/index.js"></script>
 <!--自适应脚本-->
@@ -379,7 +355,7 @@
         // 如果需要滚动条
         scrollbar: {
             el: '.swiper-scrollbar',
-        },
+        }
     })
 </script>
 </html>

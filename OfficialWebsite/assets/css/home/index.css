@@ -41,12 +41,15 @@
 }
 .jf-home-block-description {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 150px;
     font-size: 28px;
     color: #a2a2a2;;
 }
 
 /*提供的服务*/
+.jf-home-services {
+    /*margin: 50px 10px 100px 10px;*/
+}
 .jf-home-services-wrap {
     position: relative;
     margin-top: 20px;
@@ -88,7 +91,7 @@
 }
 .jf-home-services-description {
     margin-top: 20px;
-    margin-bottom: 50px;
+    margin-bottom: 150px;
     text-align: center;
     color: #a2a2a2;
 }
@@ -98,7 +101,7 @@
     background: #efefef;
 }
 .jf-home-partment-container {
-    margin: 10px 10px 50px 10px;
+    margin: 0 10px 100px 10px;
     background: #2f3238;
 }
 .jf-home-partment-img {
@@ -132,4 +135,57 @@
 }
 .jf-home-partment-description:hover>span {
     color: #a2a2a2;
+}
+
+/*计服公告*/
+.jf-home-news {
+    margin: 50px 0 150px 0;
+}
+.jf-home-news-title {
+}
+.jf-home-news-title h4 {
+    float: left;
+    padding-left: 8px;
+    font-size: 18px;
+    line-height: 20px;
+    color: #222;
+    font-weight: bold;
+    border-left: 3px solid #434866;
+}
+.jf-home-news-title a.more {
+    float: right;
+    line-height: 40px;
+    color: #999;
+    text-decoration: none;
+}
+.jf-home-news-list {
+    display: inline-block;
+    margin-top: 10px;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px dashed #e7e4e4;
+    overflow: hidden;
+}
+.jf-home-news-list .new-title {
+    display: inline-block;
+    float: left;
+    width: calc(100% - 105px);
+    overflow-x: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #333;
+}
+.jf-home-news-list .new-title:hover {
+    color: #409eff;
+    text-decoration: none;
+}
+.jf-home-news-list .new-date {
+    display: inline-block;
+    float: right;
+    width: 105px;
+    color: #727272;
+}
+.jf-home-news-share {
+    margin-top: 10px;
 }
