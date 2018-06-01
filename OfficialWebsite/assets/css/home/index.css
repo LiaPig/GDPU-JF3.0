@@ -108,7 +108,7 @@
     display: inline-block;
     width: 100%;
     padding: calc(50% - 10px) 0;
-    background: #409eff;
+    background: #45aed6;
 }
 .jf-home-partment-title {
     padding: 0 10px 10px 10px;
@@ -177,7 +177,7 @@
     color: #333;
 }
 .jf-home-news-list .new-title:hover {
-    color: #409eff;
+    color: #45aed6;
     text-decoration: none;
 }
 .jf-home-news-list .new-date {
