@@ -127,6 +127,63 @@
     text-align: center;
 }
 
+/*中间内容*/
+.jf-content {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/*面包屑*/
+.breadcrumbs {
+    color: #909399;
+    height: 30px;
+    line-height: 30px;
+    margin: 10px 0 1px 10px;
+}
+.breadcrumbs a {
+    display: inline-block;
+    width: 80px;
+    text-align: center;
+}
+.breadcrumbs .home {
+    width: 50px;
+    color: #303133;
+    text-decoration: none;
+    font-weight: bold;
+}
+.breadcrumbs .current {
+    color: #909399;
+    text-decoration: none;
+}
+
+/*二级导航*/
+.second-nav {
+    height: 50px;
+    line-height: 50px;
+    background: #2f3238;
+    text-align: center;
+    border: 1px solid #2f3238;
+    border-radius: 50px;
+}
+.second-nav-borderRight {
+    border-right: 1px solid #fff;
+}
+.second-nav a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    color: #727b8b;
+    text-decoration: none;
+}
+.second-nav a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+.second-nav .current {
+    color: #fff;
+}
+
+
 /*清除浮动*/
 .clear {
     clear: both;
@@ -146,4 +203,3 @@
 .border {
     border: 1px solid red;
 }
-

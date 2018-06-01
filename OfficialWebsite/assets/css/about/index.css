@@ -1,0 +1,11 @@
+.jf-about-index {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 100%;
+    overflow-x: hidden;
+}
+.jf-about-index-topImg {
+    height: 300px;
+    width: 100%;
+    border: 1px solid #5e5e5e;
+}
