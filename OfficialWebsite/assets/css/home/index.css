@@ -3,17 +3,6 @@
     width: 100%;
     overflow-x: hidden;
 }
-/*轮播图*/
-.swiper-container {
-    height: 800px;
-    overflow: hidden;
-}
-.swiper-slide img {
-    width: 100%;
-    height: 100%;
-    /*margin: 0 auto;*/
-    /*-webkit-background-size: 10;*/
-}
 /*模块区域的标题样式*/
 .jf-home-block-title {
     margin: 60px 0 10px 0;
@@ -44,6 +33,32 @@
     margin-bottom: 150px;
     font-size: 28px;
     color: #a2a2a2;;
+}
+
+/*轮播图*/
+.home-swiper-title {
+    margin-top: 50px;
+    font-size: 52px;
+    color: #222;
+    text-align: center;
+}
+.home-swiper-description {
+    margin-top: 10px;
+    margin-bottom: 50px;
+    font-size: 22px;
+    color: #a2a2a2;
+    text-align: center;
+}
+.swiper-container {
+    margin-bottom: 100px;
+    height: 500px;
+    overflow: hidden;
+}
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    /*margin: 0 auto;*/
+    /*-webkit-background-size: 10;*/
 }
 
 /*提供的服务*/
@@ -121,7 +136,7 @@
     margin-right: 10px;
     width: 3px;
     height: 18px;
-    background: #fff;
+    background: #45aed6;
 }
 .jf-home-partment-description {
     padding: 0 10px 20px 10px;
@@ -134,8 +149,9 @@
     color: #fff;
 }
 .jf-home-partment-description:hover>span {
-    color: #a2a2a2;
+    color: #45aed6;
 }
+
 
 /*计服公告*/
 .jf-home-news {
