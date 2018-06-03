@@ -1,11 +1,20 @@
 .jf-about {
     width: 100%;
     overflow-x: hidden;
+}
 .jf-about-index {
     margin-top: 50px;
     margin-bottom: 50px;
     width: 100%;
     overflow-x: hidden;
+}
+.jf-about-index p {
+    text-indent: 30px;
+    line-height: 30px;
+    color: #666;
+}
+.jf-about-index p>span {
+    color: #45aed6;
 }
 .jf-about-index-topImg {
     height: 300px;
