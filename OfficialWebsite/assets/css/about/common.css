@@ -9,6 +9,10 @@
     height: 3px;
     background: #000000;
 }
+.jf-about {
+    width: 100%;
+    overflow-x: hidden;
+}
 .jf-about-topImg {
     height: 300px;
     width: 100%;

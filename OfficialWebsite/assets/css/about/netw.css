@@ -1,0 +1,19 @@
+.jf-about-netw {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 100%;
+    overflow-x: hidden;
+}
+.jf-about-netw p {
+    text-indent: 30px;
+    line-height: 30px;
+    color: #666;
+}
+.jf-about-netw p>span {
+    color: #45aed6;
+}
+.jf-about-netw-img {
+    display: inline-block;
+    width: 100%;
+    height: 400px;
+}
