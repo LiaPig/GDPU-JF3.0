@@ -1,0 +1,19 @@
+.jf-about-tech {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 100%;
+    overflow-x: hidden;
+}
+.jf-about-tech p {
+    text-indent: 30px;
+    line-height: 30px;
+    color: #666;
+}
+.jf-about-tech p>span {
+    color: #45aed6;
+}
+.jf-about-tech-img {
+    display: inline-block;
+    width: 100%;
+    height: 300px;
+}
