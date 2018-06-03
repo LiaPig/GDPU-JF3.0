@@ -16,8 +16,8 @@
 .jf-about-index p>span {
     color: #45aed6;
 }
-.jf-about-index-topImg {
-    height: 300px;
+.jf-about-index-video {
+    display: inline-block;
     width: 100%;
-    border: 1px solid #5e5e5e;
+    height: 400px;
 }
