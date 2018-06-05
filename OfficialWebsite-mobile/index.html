@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0,viewport-fit=cover">
+    <title>移动端-计服3.0</title>
+    <link rel="stylesheet" href="./assets/css/lib/swiper-4.2.2.min.css">
+    <script>
+        ;(function(designWidth, maxWidth) {
+            var doc = document,
+                win = window,
+                docEl = doc.documentElement,
+                remStyle = document.createElement("style"),
+                tid;
+
+            function refreshRem() {
+                var width = docEl.getBoundingClientRect().width;
+                maxWidth = maxWidth || 540;
+                width>maxWidth && (width=maxWidth);
+                var rem = width * 100 / designWidth;
+                remStyle.innerHTML = 'html{font-size:' + rem + 'px;}';
+            }
+
+            if (docEl.firstElementChild) {
+                docEl.firstElementChild.appendChild(remStyle);
+            } else {
+                var wrap = doc.createElement("div");
+                wrap.appendChild(remStyle);
+                doc.write(wrap.innerHTML);
+                wrap = null;
+            }
+            //要等 wiewport 设置好后才能执行 refreshRem，不然 refreshRem 会执行2次；
+            refreshRem();
+
+            win.addEventListener("resize", function() {
+                clearTimeout(tid); //防止执行两次
+                tid = setTimeout(refreshRem, 300);
+            }, false);
+
+            win.addEventListener("pageshow", function(e) {
+                if (e.persisted) { // 浏览器后退的时候重新计算
+                    clearTimeout(tid);
+                    tid = setTimeout(refreshRem, 300);
+                }
+            }, false);
+
+            if (doc.readyState === "complete") {
+                doc.body.style.fontSize = "16px";
+            } else {
+                doc.addEventListener("DOMContentLoaded", function(e) {
+                    doc.body.style.fontSize = "16px";
+                }, false);
+            }
+        })(750, 750);
+        //
+        // (function (doc, win) {
+        //   var max = 750,
+        //     docEl = doc.documentElement,
+        //     resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+        //     recalc = function () {
+        //       var clientWidth = docEl.clientWidth;
+        //       if (!clientWidth) return;
+        //       if (clientWidth >= max) {
+        //         docEl.style.fontSize = '100px';
+        //       } else {
+        //         docEl.style.fontSize = 100 * clientWidth / max + 'px';
+        //       }
+        //     };
+        //   if (!doc.addEventListener) return;
+        //   win.addEventListener(resizeEvt, recalc, false);
+        //   doc.addEventListener('DOMContentLoaded', recalc, false);
+        // })(document, window);
+    </script>
+</head>
+<body>
+<div class="jf-header">
+    <div class="jf-header-logo"></div>
+    <div class="jf-header-menu"></div>
+</div>
+<div class="jf-content">
+    <div class="home-swiper">
+        <div class="home-swiper-title">广药计算机学生服务队</div>
+        <div class="home-swiper-description">广药计服是一支为广药师生提供免费的电脑、网络维护服务的专业团队</div>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="img"></div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="img" style="background: red"></div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="img" style="background: rebeccapurple"></div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="img" style="background: yellow"></div>
+                </div>
+            </div>
+            <!-- 如果需要分页器 -->
+            <div class="swiper-pagination"></div>
+
+            <!-- 如果需要滚动条 -->
+            <div class="swiper-scrollbar"></div>
+        </div>
+    </div>
+    <div class="jf-home-services">
+        <div class="jf-home-block-title wow fadeInDown" data-wow-delay="0.5s">提供的服务</div>
+        <div class="jf-home-block-description wow fadeInDown" data-wow-delay="1s">服务于你，教育于我</div>
+        <div>
+            <div class="flex-left">
+                <div class="unit-1-2">
+                    <div class="flex-left">
+                        <div class="unit">
+                            <div class="wow fadeInDown" data-wow-delay="1.5s">
+                                <div class="jf-home-services-wrap">
+                                    <div class="flex-center flex-middle" style="height: 100%">
+                                        <img src="./assets/img/icon/weixiugongju.png" class="jf-home-services-icon">
+                                    </div>
+                                </div>
+                                <div class="jf-home-services-title">电脑维修</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="unit-1-2">
+                    <div class="unit">
+                        <div class="wow fadeInDown" data-wow-delay="2s">
+                            <div class="jf-home-services-wrap">
+                                <div class="flex-center flex-middle" style="height: 100%">
+                                    <img src="./assets/img/icon/wangzhan.png" class="jf-home-services-icon">
+                                </div>
+                            </div>
+                            <div class="jf-home-services-title">网站开发</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-left">
+                <div class="unit-1-2">
+                    <div class="flex-left">
+                        <div class="unit">
+                            <div class="wow fadeInDown" data-wow-delay="2.5s">
+                                <div class="jf-home-services-wrap">
+                                    <div class="flex-center flex-middle" style="height: 100%">
+                                        <img src="./assets/img/icon/PPT.png" class="jf-home-services-icon">
+                                    </div>
+                                </div>
+                                <div class="jf-home-services-title">课件制作</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="unit-1-2">
+                    <div class="unit">
+                        <div class="wow fadeInDown" data-wow-delay="3s">
+                            <div class="jf-home-services-wrap">
+                                <div class="flex-center flex-middle" style="height: 100%">
+                                    <img src="./assets/img/icon/diannao.png" class="jf-home-services-icon">
+                                </div>
+                            </div>
+                            <div class="jf-home-services-title">电脑代购</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+</div>
+<script type="text/javascript" src="./assets/js/lib/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.2/js/swiper.min.js"></script>
+<script type="text/javascript" src="./assets/js/lib/youziku.min.js"></script>
+<script type="text/javascript" src="./main.js"></script>
+<script>
+    $youziku.load(".home-swiper-title", "6829a492d68c41d7974b0d268d43b209", "QXyingbixing");
+    $youziku.draw();
+</script>
+<script>
+    var mySwiper = new Swiper ('.swiper-container', {
+        direction: 'horizontal',
+        loop: true,
+        autoplay:true,
+        speed: 1000,
+
+        // 如果需要前进后退按钮
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+        // 如果需要滚动条
+        scrollbar: {
+            el: '.swiper-scrollbar',
+        },
+    })
+</script>
+</body>
+</html>

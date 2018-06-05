@@ -1,0 +1,5 @@
+import 'babel-polyfill'
+import 'normalize.css'
+import 'mobi.css'
+import './assets/css/common.scss'
+import './assets/js/lib/swiper-4.2.2.min.js'

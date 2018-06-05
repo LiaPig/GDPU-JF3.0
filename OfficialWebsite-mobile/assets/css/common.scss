@@ -1,0 +1,140 @@
+.jf-header {
+	position: relative;
+	top: 0;
+	left: 0;
+	display: inline-block;
+	width: 100%;
+	height: 1.066667rem;
+	background: #2f3238;
+	color: #fff;
+	.jf-header-logo {
+		position: absolute;
+		top: 0;
+		left: 0.266667rem;
+		height: 100%;
+		width: 2.666667rem;
+		background: url('../img/logo/jf.png');
+		background-repeat: no-repeat;
+		background-size: 1.333333rem auto;
+		background-position: left 0.066667rem;
+	}
+	.jf-header-menu {
+		position: absolute;
+		top: 0;
+		right: 0.4rem;
+		height: 100%;
+		width: 1.066667rem;
+		background: url('../img/icon/menu-more.png');
+		background-repeat: no-repeat;
+		background-size: 0.533333rem auto;
+		background-position: right center;
+	}
+}
+.jf-content {
+	text-align: center;
+	.jf-home-block-title {
+		margin: 0.4rem 0 0.133333rem 0;
+		font-size: 0.6rem;
+		font-weight: 300;
+		text-align: center;
+		overflow: hidden;
+	}
+	.jf-home-block-title:before, .jf-home-block-title:after {
+		content: "";
+		background: #ccc;
+		display: inline-block;
+		height: 1px;
+		position: relative;
+		width: 1.6rem;
+		vertical-align: middle;
+	}
+	.jf-home-block-title:before {
+		right: 0.5em;
+		margin-left: -42%;
+	}
+	.jf-home-block-title:after {
+		left: 0.5em;
+		margin-right: -42%;
+	}
+	.jf-home-block-description {
+		text-align: center;
+		margin-bottom: 0.666667rem;
+		font-size: 0.266667rem;
+		color: #a2a2a2;;
+	}
+	// 主页
+	// 轮播图
+	.home-swiper-title {
+		margin: 0.266667rem 0 0.266667rem 0;
+		font-size: 0.4rem;
+		color: #222;
+    	text-align: center;
+	}
+	.home-swiper-description {
+		margin-top: 0.133333rem;
+    	margin-bottom: 0.666667rem;
+    	font-size: 0.186667rem;
+    	color: #a2a2a2;
+    	text-align: center;
+	}
+	.swiper-container {
+	    margin-bottom: 1.333333rem;
+	    height: 4.0rem;
+	    overflow: hidden;
+	}
+	// 提供的服务
+	.jf-home-services {
+		margin-bottom: 0.666667rem;
+		/*margin: 50px 10px 100px 10px;*/
+	}
+	.jf-home-services-wrap {
+		position: relative;
+		left: 25%;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		width: 50%;
+		background: #2f3238;
+		padding: 12.5% 0;
+		border-radius: 100%;
+		text-align: center;
+	}
+	.jf-home-services-icon {
+		background-position: 0 0;
+		display: inline-block;
+		height: 50%;
+		width: 50%;
+		text-align: center;
+	}
+	.jf-home-services-icon:hover {
+		font-size: 1rem;
+	}
+	.jf-home-services-title {
+		text-align: center;
+		color: #222;
+		font-size: 20px;
+		font-weight: bold;
+	}
+	.jf-home-services-line {
+		margin: 0 auto;
+		display: inline-block;
+		height: 0.026667rem;
+		width: 0.533333rem;
+		background: #000;
+	}
+	.jf-home-services-description {
+		padding-left: 12%;
+		width: 84%;
+		margin-top: 0.266667rem;
+		margin-bottom: 1.333333rem;
+		text-align: center;
+		color: #a2a2a2;
+	}
+	
+}
+
+.img {
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	background: #45aed6;
+}
