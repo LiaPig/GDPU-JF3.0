@@ -1,26 +1,6 @@
-.top-title {
-    text-align: center;
-    font-size: 42px;
-    padding-top: 100px;
-}
-.top-border {
-    margin: 10px auto;
-    width: 100px;
-    height: 3px;
-    background: #000000;
-}
 .jf-about {
     width: 100%;
     overflow-x: hidden;
-}
-.jf-about-topImg {
-    height: 300px;
-    width: 100%;
-    border: 1px solid #5e5e5e;
-    background: url("../../img/bg/about-top.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
 }
 .jf-about-title {
     font-size: 44px;

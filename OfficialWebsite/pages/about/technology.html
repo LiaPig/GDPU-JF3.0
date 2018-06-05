@@ -53,7 +53,7 @@
 <div class="jf-content">
     <!--这里放顶部图-->
     <div class="row">
-        <div class="jf-about-topImg">
+        <div class="jf-top-img">
             <div class="top-title">技术部简介</div>
             <div class="top-border"></div>
         </div>
@@ -172,44 +172,11 @@
     </div>
     <div class="row copyright">网站备案号：  © 2014 gdpujf.duapp.com 京ICP备13017353号-3 京公网安备11010802012357号</div>
 </div>
-
 </body>
 <script rel="script" src="../../assets/js/lib/jquery.min.js"></script>
 <script rel="script" src="../../assets/js/lib/bootstrap.js"></script>
 <script rel="script" src="../../assets/js/lib/swiper-4.2.2.min.js"></script>
 <script rel="script" src="../../assets/js/lib/wow.min.js"></script>
 <script rel="script" src="../../assets/js/common.js"></script>
-<script rel="script" src="../../assets/js/home/index.js"></script>
-<!--自适应脚本-->
-<script>
-    // 设置页面rem大小
-    // 以设计图( 750*1334 )尺寸宽度作为参考标准
-    ;
-    (function (doc, win) {
-        var max = 750,
-            docEl = doc.documentElement,
-            // 判断有没有‘orientationchange’(手机的竖屏横屏切换)事件,有就行，没就要用resize了
-            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
-            // 计算html的font-size该为多少
-            recalc = function () {
-                // 获取当前设备可见区域宽度
-                var clientWidth = docEl.clientWidth;
-                // 为0或者不存在就返回
-                if (!clientWidth) return;
-                if (clientWidth >= max) {
-                    // 只要比设计图的宽度大，都为100了
-                    docEl.style.fontSize = '100px';
-                } else {
-                    // 让html的font-size等于这个这个公式算出来的
-                    docEl.style.fontSize = 100 * clientWidth / max + 'px';
-                }
-            };
-        // document没有增加事件监听的就可以返回退出函数了
-        if (!doc.addEventListener) return;
-        // 给window添加监听事件，只要横屏竖屏发生切换，就重新计算font-size值
-        win.addEventListener(resizeEvt, recalc, false);
-        // 增加事件监听：当dom元素加载的时候触发函数计算font-size的值
-        doc.addEventListener('DOMContentLoaded', recalc, false);
-    })(document, window);
-</script>
+<!--<script rel="script" src="../../assets/js/home/index.js"></script>-->
 </html>

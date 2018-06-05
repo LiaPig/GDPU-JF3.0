@@ -132,6 +132,26 @@
     width: 100%;
     overflow-x: hidden;
 }
+.jf-content .top-title {
+    text-align: center;
+    font-size: 42px;
+    padding-top: 100px;
+}
+.jf-content .top-border {
+    margin: 10px auto;
+    width: 100px;
+    height: 3px;
+    background: #000000;
+}
+.jf-top-img {
+    height: 300px;
+    width: 100%;
+    border: 1px solid #5e5e5e;
+    background: url("../img/bg/about-top.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
 
 /*面包屑*/
 .breadcrumbs {
