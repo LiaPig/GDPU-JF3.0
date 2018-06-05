@@ -17,6 +17,10 @@
     height: 300px;
     width: 100%;
     border: 1px solid #5e5e5e;
+    background: url("../../img/bg/about-top.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
 }
 .jf-about-title {
     font-size: 44px;
