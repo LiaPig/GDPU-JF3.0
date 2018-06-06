@@ -4,7 +4,8 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "start": "parcel index.html"
+    "start": "parcel index.html",
+    "build": "parcel build index.html -d build --public-url /mobile/"
   },
   "keywords": [],
   "author": "",
@@ -12,8 +13,8 @@
   "dependencies": {
     "babel-polyfill": "^6.26.0",
     "mobi.css": "^3.1.1",
-    "normalize": "^0.3.1",
-    "normalize.css": "^8.0.0"
+    "normalize.css": "^8.0.0",
+    "parcel": "^1.8.1"
   },
   "devDependencies": {
     "node-sass": "^4.9.0"
