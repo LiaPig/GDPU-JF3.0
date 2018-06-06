@@ -1,5 +1,5 @@
 .jf-header {
-	position: relative;
+	position: fixed;
 	top: 0;
 	left: 0;
 	display: inline-block;
@@ -7,13 +7,14 @@
 	height: 1.066667rem;
 	background: #2f3238;
 	color: #fff;
+	z-index: 999;
 	.jf-header-logo {
 		position: absolute;
 		top: 0;
 		left: 0.266667rem;
 		height: 100%;
 		width: 2.666667rem;
-		background: url('../img/logo/jf.png');
+		background: url('../img/logo/jf.jpg');
 		background-repeat: no-repeat;
 		background-size: 1.333333rem auto;
 		background-position: left 0.066667rem;
@@ -33,7 +34,7 @@
 .jf-content {
 	text-align: center;
 	.jf-home-block-title {
-		margin: 0.4rem 0 0.133333rem 0;
+		margin: 0.666667rem 0 0.133333rem 0;
 		font-size: 0.6rem;
 		font-weight: 300;
 		text-align: center;
@@ -65,7 +66,7 @@
 	// 主页
 	// 轮播图
 	.home-swiper-title {
-		margin: 0.266667rem 0 0.266667rem 0;
+		margin: 1.333333rem 0 0.266667rem 0;
 		font-size: 0.4rem;
 		color: #222;
     	text-align: center;
@@ -105,31 +106,143 @@
 		width: 50%;
 		text-align: center;
 	}
-	.jf-home-services-icon:hover {
-		font-size: 1rem;
-	}
 	.jf-home-services-title {
 		text-align: center;
 		color: #222;
-		font-size: 20px;
+		font-size: 14px;
 		font-weight: bold;
 	}
-	.jf-home-services-line {
-		margin: 0 auto;
+	//	部门简介
+	.jf-home-department {
+		padding: 0.133333rem 0 0.133333rem 0;
+    	background: #efefef;
+	}
+	.jf-home-partment-container {
+		position: relative;
+		width: 80%;
+		left: 10%;
+		height: 2.666667rem;
+		margin-bottom: 10px;
+	    background: #2f3238;
+	}
+	.jf-home-partment-img {
+		position: absolute;
+		left: 0.133333rem;
+		top: 0.333333rem;
+	    display: inline-block;
+	    height: 2.0rem;
+	    width: 2.0rem;
+	}
+	.jf-home-partment-img img {
+	    display: inline-block;
+	    width: 100%;
+	    height: 100%;
+	}
+	.jf-home-partment-content {
+		position: absolute;
+		right: 0;
 		display: inline-block;
-		height: 0.026667rem;
-		width: 0.533333rem;
-		background: #000;
+	    width: calc(100% - 2.133333rem);
+	    height: 100%;
+	    text-align: left;
 	}
-	.jf-home-services-description {
-		padding-left: 12%;
-		width: 84%;
-		margin-top: 0.266667rem;
-		margin-bottom: 1.333333rem;
-		text-align: center;
-		color: #a2a2a2;
+	.jf-home-partment-title {
+	    margin-top: 0.133333rem;
+	    padding: 0 0.133333rem 0px 0.133333rem;
+	    color: #fff;
+	    font-size: 0.266667rem;
+	    font-weight: bold;
 	}
-	
+	.jf-home-partment-title>span {
+	    display: inline-block;
+	    margin-right: 0.133333rem;
+	    width: 0.066667rem;
+	    height: 0.24rem;
+	    background: #45aed6;
+	}
+	.jf-home-partment-description {
+	    padding-left: 0.133333rem;
+	    margin-top: 0.066667rem;
+	    display: inline-block;
+	    width: 100%;
+	    font-size: 0.186667rem;
+	    color: #a2a2a2;
+	}
+	.jf-home-partment-description>span {
+	    color: #fff;
+	}
+	.jf-home-partment-description:hover>span {
+	    color: #45aed6;
+	}
+	.jf-home-partment-button {
+		position: absolute;
+		bottom: 10px;
+	    display: inline-block;
+	    width: 1.6rem;
+	    height: 0.4rem;
+	    line-height: 0.4rem;
+	    margin-left: 0.133333rem;
+	    background: #45aed6;
+	    text-align: center;
+	    font-size: 0.186667rem;
+	    color: #fff;
+	    text-decoration: none;
+	    border: 1px solid #45aed6;
+	}
+	//	计服公告
+	.jf-home-news {
+	    margin: 0.666667rem 0.666667rem 0.666667rem 0.666667rem;
+	}
+	.jf-home-news-title {
+	}
+	.jf-home-news-title h4 {
+	    float: left;
+	    margin-top: 0.133333rem;
+	    padding-left: 0.106667rem;
+	    font-size: 18px;
+	    line-height: 0.333333rem;
+	    color: #222;
+	    font-weight: bold;
+	    border-left: 3px solid #434866;
+	}
+	.jf-home-news-title a.more {
+	    float: right;
+	    margin-top: 0;
+	    line-height: 40px;
+	    color: #999;
+	    text-decoration: none;
+	}
+	.jf-home-news-list {
+	    display: inline-block;
+	    margin-top: 0.133333rem;
+	    width: 100%;
+	    height: 0.533333rem;
+	    line-height: 0.533333rem;
+	    text-align: left;
+	    border-bottom: 1px dashed #e7e4e4;
+	    overflow: hidden;
+	    font-size: 0.186667rem;
+	}
+	.jf-home-news-list .new-title {
+	    display: inline-block;
+	    float: left;
+	    width: calc(100% - 105px);
+	    overflow-x: hidden;
+	    white-space: nowrap;
+	    text-overflow: ellipsis;
+	    color: #45aed6;
+	}
+	.jf-home-news-list .new-date {
+	    display: inline-block;
+	    margin-top: 0;
+	    float: right;
+	    text-align: right;
+	    width: 105px;
+	    color: #727272;
+	}
+	.jf-home-news-share {
+	    margin-top: 10px;
+	}
 }
 
 .img {
