@@ -39,7 +39,7 @@
                             <a href="#">电脑报障</a>
                         </li>
                         <li class="fadeIn-underlinie">
-                            <a href="#" class="none-border">加入我们</a>
+                            <a href="/signUp/signUp.html" class="none-border">加入我们</a>
                         </li>
                     </ul>
                 </div>
@@ -322,19 +322,19 @@
 <script rel="script" src="./assets/js/common.js"></script>
 <script rel="script" src="./assets/js/home/index.js"></script>
 <script type="text/javascript" src="./assets/js/lib/youziku.min.js"></script>
-<!--<script type="text/javascript">-->
-    <!--(function () {-->
-        <!--//true为PC端，false为手机端(小于1024px都算mobile了)-->
-        <!--var flag = true;-->
-        <!--var wid = document.body.clientWidth;-->
-        <!--if (wid <= 1024){-->
-            <!--flag = false;-->
-        <!--}-->
-        <!--if (!flag) {-->
-            <!--window.location.href = "http://pig.leewaiho.com/mobile"-->
-        <!--}-->
-    <!--})();-->
-<!--</script>-->
+<script type="text/javascript">
+    (function () {
+        //true为PC端，false为手机端(小于1024px都算mobile了)
+        var flag = true;
+        var wid = document.body.clientWidth;
+        if (wid <= 1024){
+            flag = false;
+        }
+        if (!flag) {
+            window.location.href = "http://pig.leewaiho.com/mobile"
+        }
+    })();
+</script>
 <!--轮播图脚本-->
 <script>
     var mySwiper = new Swiper ('.swiper-container', {
