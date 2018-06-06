@@ -18,10 +18,10 @@
         <div class="col-md-2"></div>
         <div class="col-md-8">
             <div class="row">
-                <div class="col-md-3 jf-header-logo">
+                <div class="col-md-2 jf-header-logo">
                     <a href="/mobile/index.html" class="img">移动端</a>
                 </div>
-                <div class="9">
+                <div class="col-md-10">
                     <ul class="jf-header-nav">
                         <li class="li-active">
                             <a href="#" class="a-active">首页</a>
@@ -139,31 +139,37 @@
                 <div class="col-md-4 wow rollIn center" data-wow-delay="1.3s">
                     <div class="jf-home-partment-container">
                         <div class="jf-home-partment-img">
+                            <img src="./assets/img/avatar/tech.jpg">
                         </div>
                         <div class="jf-home-partment-title">
                             <span></span>技术部
                         </div>
-                        <p class="jf-home-partment-description">计服的核心战力，拥有丰富的硬件知识和软件问题解决方案,被誉为计服之魂。主要负责<span>电脑故障维修</span>和<span>代购服务</span>，校园日常电脑问题全然不在话下，可以解决多种电脑疑难杂症和网络故障，能直接到学院各单位老师处进行服务。无论是生活区还是教学区，有电脑问题的地方时常能看到他们的身影。想要成为传说中独当一面的修机男（女）神吗？想要提升你的电脑知识与技能吗？想要帮助更多有需要的人吗？技术部欢迎你的加入！</p>
+                        <p class="jf-home-partment-description">计服的核心战力，拥有丰富的<span>硬件知识</span>和<span>软件问题</span>解决方案,被誉为计服之魂。</p>
+                        <a class="jf-home-partment-button" href="./pages/about/technology.html">了解更多</a>
                     </div>
                 </div>
                 <div class="col-md-4 wow rollIn center" data-wow-delay="1.6s">
                     <div class="jf-home-partment-container">
                         <div class="jf-home-partment-img">
+                            <img src="./assets/img/avatar/netw.jpg">
                         </div>
                         <div class="jf-home-partment-title">
                             <span></span>网络部
                         </div>
-                        <p class="jf-home-partment-description">网络部致力于以技术为核心，为大学城校区各机关单位制作网页以及提供技术上的帮助。不仅能学到关于计算机技术的项目经验、开发领域的<span>前端设计</span>与<span>后台支撑架构</span>的知识。还能学习<span>PS、AE、AI</span>等等图像视频处理软件，专攻平面设计软件。培训课程体系涉IT最热门的领域：<span>网站建设、图像处理、视频制作</span>等。 至今已为学校开发多个机构网站，并在2014年获得广东药学院官网的开发权限。喜欢PS和网页设计的萌新们快加入吧！</p>
+                        <p class="jf-home-partment-description">网络部致力于以技术为核心，为大学城校区各机关单位<span>制作网页</span>以及提供<span>技术上的帮助</span>。</p>
+                        <a class="jf-home-partment-button" href="./pages/about/network.html">了解更多</a>
                     </div>
                 </div>
                 <div class="col-md-4 wow rollIn center" data-wow-delay="1.9s">
                     <div class="jf-home-partment-container">
                         <div class="jf-home-partment-img">
+                            <img src="./assets/img/avatar/plan.jpg">
                         </div>
                         <div class="jf-home-partment-title">
                             <span></span>策划部
                         </div>
-                        <p class="jf-home-partment-description">策划部的魅力在于创意造就无限的可能，是计服各种活动的策划者和创新者！策划部是个特殊的部门，在这个部门你能学到三个部门的知识：策划部的策划，网络部的编程，技术部的维修。同时，还负责<span>PPT/Prezi的制作</span>和<span>公众号的运营维护</span>。你想在学到电脑技术的同时，锻炼自己的组织策划能力、提升自己的表达沟通能力吗？这里有最全方位的能力辅导，最全面的提升，如果你想全面的提高自己的各项能力，那就来策划部吧！</p>
+                        <p class="jf-home-partment-description">策划部的魅力在于<span>创意造就无限的可能</span>，是计服各种活动的策划者和创新者！</p>
+                        <a class="jf-home-partment-button" href="./pages/about/plan.html">了解更多</a>
                     </div>
                 </div>
             </div>
@@ -316,6 +322,19 @@
 <script rel="script" src="./assets/js/common.js"></script>
 <script rel="script" src="./assets/js/home/index.js"></script>
 <script type="text/javascript" src="./assets/js/lib/youziku.min.js"></script>
+<script type="text/javascript">
+    (function () {
+        //true为PC端，false为手机端(小于1024px都算mobile了)
+        var flag = true;
+        var wid = document.body.clientWidth;
+        if (wid <= 1024){
+            flag = false;
+        }
+        if (!flag) {
+            window.location.href = "http://pig.leewaiho.com/mobile"
+        }
+    })();
+</script>
 <!--轮播图脚本-->
 <script>
     var mySwiper = new Swiper ('.swiper-container', {
