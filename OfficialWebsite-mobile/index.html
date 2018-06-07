@@ -75,11 +75,20 @@
 <body>
 <div class="jf-header">
     <div class="jf-header-logo"></div>
-    <div class="jf-header-menu"></div>
+    <div class="jf-header-menu-more"></div>
+    <div class="jf-header-menu-close"></div>
+</div>
+<div class="jf-header-popper">
+    <a class="jf-header-popper-menu current" href="#">首页</a>
+    <a class="jf-header-popper-menu" href="#">计服简介</a>
+    <a class="jf-header-popper-menu" href="#">计服公告</a>
+    <a class="jf-header-popper-menu" href="#">其他服务</a>
+    <a class="jf-header-popper-menu" href="#">电脑报障</a>
+    <a class="jf-header-popper-menu" href="#">加入我们</a>
 </div>
 <div class="jf-content">
     <div class="home-swiper">
-        <div class="home-swiper-title">广药计算机学生服务队</div>
+        <div class="home-swiper-title"></div>
         <div class="home-swiper-description">广药计服是一支为广药师生提供免费的电脑、网络维护服务的专业团队</div>
         <div class="swiper-container">
             <div class="swiper-wrapper">
@@ -329,26 +338,21 @@
 </div>
 <script type="text/javascript" src="./assets/js/lib/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.2/js/swiper.min.js"></script>
-<script type="text/javascript" src="./assets/js/lib/youziku.min.js"></script>
 <script type="text/javascript" src="./main.js"></script>
-<script type="text/javascript">
-    function IsPC() {
-        //true为PC端，false为手机端(小于1024px都算mobile了)
-        var flag = true;
-        var wid = document.body.clientWidth;
-        if (wid <= 1024){
-            flag = false;
-        }
-        if (flag) {
-            window.location.href = "http://pig.leewaiho.com/"
-        }
-    }
-    IsPC();
-</script>
-<script>
-    $youziku.load(".home-swiper-title", "6829a492d68c41d7974b0d268d43b209", "QXyingbixing");
-    $youziku.draw();
-</script>
+<!--<script type="text/javascript">-->
+    <!--function IsPC() {-->
+        <!--//true为PC端，false为手机端(小于1024px都算mobile了)-->
+        <!--var flag = true;-->
+        <!--var wid = document.body.clientWidth;-->
+        <!--if (wid <= 1024){-->
+            <!--flag = false;-->
+        <!--}-->
+        <!--if (flag) {-->
+            <!--window.location.href = "http://pig.leewaiho.com/"-->
+        <!--}-->
+    <!--}-->
+    <!--IsPC();-->
+<!--</script>-->
 <script>
     var mySwiper = new Swiper ('.swiper-container', {
         direction: 'horizontal',
