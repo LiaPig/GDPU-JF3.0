@@ -307,6 +307,7 @@
 		width: calc(100% - 0.266667rem);
 		height: 0.4rem;
 		line-height: 0.4rem;
+		font-size: 0.213333rem;
 		color: #727b8b;
 		text-decoration: none;
 	}
@@ -326,15 +327,15 @@
 	    }
 	    .qrcode-img {
 			img {
-				height: 1.466667rem;
-				width: 1.466667rem;
+				height: 2.0rem;
+				width: 2.0rem;
 			}
 	    }
 	    .description {
 	    	margin-top: 0.133333rem;
 	    	margin-bottom: 10px;
 	    	font-size: 0.16rem;
-	    	width: 1.466667rem;
+	    	width: 2.0rem;
 	    	text-align: center;
 	    }
 	}

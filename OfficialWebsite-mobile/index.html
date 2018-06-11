@@ -296,7 +296,7 @@
     </div>
 </div>
 <div class="jf-footer">
-    <div class="jf-footer-menu">
+    <div class="jf-footer-menu" index="1">
         <div class="jf-footer-menu-title">社团概况</div>
         <div class="jf-footer-menu-more">+</div>
     </div>
@@ -306,7 +306,7 @@
         <a class="jf-footer-list-item">网络部简介</a>
         <a class="jf-footer-list-item">策划部简介</a>
     </div>
-    <div class="jf-footer-menu">
+    <div class="jf-footer-menu" index="2">
         <div class="jf-footer-menu-title">服务提供</div>
         <div class="jf-footer-menu-more">+</div>
     </div>
@@ -316,7 +316,7 @@
         <a class="jf-footer-list-item">PPT制作</a>
         <a class="jf-footer-list-item">WEB开发</a>
     </div>
-    <div class="jf-footer-menu">
+    <div class="jf-footer-menu" index="3">
         <div class="jf-footer-menu-title">了解更多</div>
         <div class="jf-footer-menu-more">+</div>
     </div>
@@ -339,20 +339,20 @@
 <script type="text/javascript" src="./assets/js/lib/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.2/js/swiper.min.js"></script>
 <script type="text/javascript" src="./main.js"></script>
-<!--<script type="text/javascript">-->
-    <!--function IsPC() {-->
-        <!--//true为PC端，false为手机端(小于1024px都算mobile了)-->
-        <!--var flag = true;-->
-        <!--var wid = document.body.clientWidth;-->
-        <!--if (wid <= 1024){-->
-            <!--flag = false;-->
-        <!--}-->
-        <!--if (flag) {-->
-            <!--window.location.href = "http://pig.leewaiho.com/"-->
-        <!--}-->
-    <!--}-->
-    <!--IsPC();-->
-<!--</script>-->
+<script type="text/javascript">
+    function IsPC() {
+        //true为PC端，false为手机端(小于1024px都算mobile了)
+        var flag = true;
+        var wid = document.body.clientWidth;
+        if (wid <= 1024){
+            flag = false;
+        }
+        if (flag) {
+            window.location.href = "http://pig.leewaiho.com/"
+        }
+    }
+    IsPC();
+</script>
 <script>
     var mySwiper = new Swiper ('.swiper-container', {
         direction: 'horizontal',
