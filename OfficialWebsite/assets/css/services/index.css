@@ -1,0 +1,37 @@
+.jf-services {
+    margin: 50px 0 50px 0;
+    color: #6c778a;
+    text-align: left;
+    border-bottom: 1px dashed #e4e8ea;
+}
+.jf-services .row {
+    margin-bottom: 80px;
+}
+.jf-services .right {
+    float: right;
+    text-align: right;
+}
+.jf-services p {
+    color: #6c778a;
+    text-indent: 30px;
+}
+.jf-services p span {
+    color: #45aed6;
+}
+.jf-services-title {
+    color: #45aed6;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.jf-form {
+    border: 1px solid #e7e7e7;
+    padding: 50px;
+    margin-bottom: 50px;
+}
+.jf-form-btn {
+    float: right;
+    background: #45aed6;
+    border-color: #45aed6;
+    color: #fff;
+}
