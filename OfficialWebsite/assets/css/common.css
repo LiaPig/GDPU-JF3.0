@@ -255,7 +255,18 @@
     background-color: #2f3238;
     color: #fff;
 }
-
+/*表单*/
+.jf-form {
+    border: 1px solid #e7e7e7;
+    padding: 50px;
+    margin-bottom: 50px;
+}
+.jf-form-btn {
+    float: right;
+    background: #45aed6;
+    border-color: #45aed6;
+    color: #fff;
+}
 /*清除浮动*/
 .clear {
     clear: both;
