@@ -20,6 +20,7 @@
               </template>
               <el-menu-item-group>
                 <el-menu-item v-for="children in item.children" v-bind:key="children.key" :index="children.path">
+                  <i :class="children.icon"></i>
                   {{ children.title }}
                 </el-menu-item>
               </el-menu-item-group>
@@ -58,25 +59,25 @@
             children: [
               {
                 path: '/',
-                icon: '',
+                icon: 'icon iconfont icon-chengyuan',
                 title: '成员管理',
                 key: 21
               },
               {
                 path: '/',
-                icon: '',
+                icon: 'icon iconfont icon-jiaoseziliao',
                 title: '角色管理',
                 key: 22
               },
               {
                 path: '/',
-                icon: '',
+                icon: 'icon iconfont icon-caidanshezhi',
                 title: '菜单管理',
                 key: 23
               },
               {
                 path: '/',
-                icon: '',
+                icon: 'icon iconfont icon-wangzhan',
                 title: '网站配置',
                 key: 24
               }
@@ -84,13 +85,13 @@
           },
           {
             path: '/b',
-            icon: 'el-icon-setting',
+            icon: 'icon iconfont icon-ai-article',
             title: '文章管理',
             key: 3,
             children: [
               {
                 path: '/',
-                icon: '',
+                icon: 'icon iconfont icon-ai-article',
                 title: '文章管理',
                 key: 31
               },
