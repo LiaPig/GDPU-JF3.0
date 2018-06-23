@@ -47,13 +47,13 @@
         menuList: [
           {
             path: '/',
-            icon: 'el-icon-setting',
+            icon: 'icon iconfont icon-zhuye',
             title: '首页',
             key: 1
           },
           {
             path: '/a',
-            icon: 'el-icon-setting',
+            icon: 'icon iconfont icon-wxbgongju',
             title: '系统管理',
             key: 2,
             children: [
@@ -70,7 +70,7 @@
                 key: 22
               },
               {
-                path: '/',
+                path: '/menu',
                 icon: 'icon iconfont icon-caidanshezhi',
                 title: '菜单管理',
                 key: 23
@@ -85,7 +85,7 @@
           },
           {
             path: '/b',
-            icon: 'icon iconfont icon-ai-article',
+            icon: 'icon iconfont icon-dongtaiwenben',
             title: '文章管理',
             key: 3,
             children: [
@@ -97,13 +97,13 @@
               },
               {
                 path: '/',
-                icon: '',
+                icon: 'icon iconfont icon-dingdanguanli',
                 title: '内容发布',
                 key: 32
               },
               {
                 path: '/',
-                icon: '',
+                icon: 'icon iconfont icon-guanli',
                 title: '分类管理',
                 key: 33
               }
@@ -111,19 +111,19 @@
           },
           {
             path: '/ab',
-            icon: 'el-icon-setting',
+            icon: 'icon iconfont icon-iconfonthuagongyuanliao',
             title: '文件管理',
             key: 4,
             children: [
               {
                 path: '/',
-                icon: '',
+                icon: 'icon iconfont icon-xiangce',
                 title: '图册管理',
                 key: 41
               },
               {
                 path: '/',
-                icon: '',
+                icon: 'icon iconfont icon-wenjian1',
                 title: '附件管理',
                 key: 42
               }
@@ -131,19 +131,19 @@
           },
           {
             path: '/abc',
-            icon: 'el-icon-setting',
+            icon: 'icon iconfont icon-shouye',
             title: '服务管理',
             key: 5,
             children: [
               {
                 path: '/',
-                icon: '',
+                icon: 'icon iconfont icon-weixiu',
                 title: '报障单管理',
                 key: 51
               },
               {
                 path: '/',
-                icon: '',
+                icon: 'icon iconfont icon-fuwuguwen',
                 title: '其他服务管理',
                 key: 52
               }
@@ -170,7 +170,9 @@
     }
     .el-menu-item,  .el-submenu__title {
       text-align: left;
-
+    }
+    .el-menu-item span, .el-submenu__title span {
+      margin-left: 10px;
     }
   }
 </style>

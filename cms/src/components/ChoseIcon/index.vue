@@ -834,6 +834,7 @@
 </script>
 
 <style lang="scss">
+
   .choseIcon-container {
     .el-dialog__title {
       font-weight: bold;
@@ -851,6 +852,9 @@
         color: #333;
         -webkit-transition: font-size 0.25s ease-out 0s;
         transition: font-size 0.25s ease-out 0s;
+        &:hover {
+          color: #45aed6;
+        }
       }
     }
     .fontclass {
