@@ -4,7 +4,7 @@
       <el-menu
         router
         :collapse="isCollapse"
-        default-active="/"
+        :default-active="$route.path"
         background-color="#2f3238"
         text-color="#fff"
         active-text-color="#45aed6"
