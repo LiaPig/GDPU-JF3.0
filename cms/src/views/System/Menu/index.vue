@@ -50,7 +50,7 @@
         <el-table-column
           label="操作">
           <template slot-scope="scope">
-            <el-button size="small" type="text">编辑</el-button>
+            <el-button size="small" type="text" @click="showEdit(scope.row)">编辑</el-button>
             <el-button size="small" type="text">管理子菜单</el-button>
           </template>
           <!--<template slot-scope="scope">{{ scope.row.date }}</template>-->
@@ -264,10 +264,31 @@
       };
     },
     methods: {
-      //
+      // 点击新增按钮
       showAdd() {
         this.AddEditTitle = '新增菜单'
         this.showAddEdit = true
+        this.formData = {
+          title: '',
+            path: '',
+            icon: '',
+            key: 1,
+            status: 1,
+            children: []
+        }
+      },
+      // 点击编辑按钮
+      showEdit(row) {
+        this.AddEditTitle = '编辑菜单'
+        this.showAddEdit = true
+        this.formData = {
+          title: row.title,
+          path: row.path,
+          icon: row.icon,
+          key: row.key,
+          status: row.status,
+          children: row.children
+        }
       },
 
       // 子组件要你关弹窗
