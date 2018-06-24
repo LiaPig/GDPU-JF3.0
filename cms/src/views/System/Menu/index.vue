@@ -133,23 +133,7 @@
     },
     data() {
       return {
-        // 新增或者编辑弹出框
-        AddEditTitle: '',
-        showAddEdit: false,
-        formData: {
-          title: '',
-          path: '',
-          icon: '',
-          key: 1,
-          status: 1,
-          children: []
-        },
-
-        chooseVisible: false,
-        icon: {
-          iconName: '',
-          iconClass: ''
-        },
+        // 表格
         tableData: [
           {
             path: '/',
@@ -260,7 +244,22 @@
               }
             ]
           }
-        ]
+        ],
+        selection: [],
+        // 新增或者编辑弹出框
+        AddEditTitle: '',
+        showAddEdit: false,
+        formData: {
+          title: '',
+          path: '',
+          icon: '',
+          key: 1,
+          status: 1,
+          children: []
+        },
+        // 选择icon
+        chooseVisible: false
+
       };
     },
     methods: {
@@ -290,7 +289,10 @@
           children: row.children
         }
       },
-
+      // 表格中的多选发生了变化
+      handleSelectionChange(selection) {
+        this.selection = selection
+      },
       // 子组件要你关弹窗
       changeDialogVisible: function (data) {
         this.chooseVisible = data
@@ -298,10 +300,6 @@
       // 从子组件获取点击的那个icon信息
       getIconData: function (iconName, iconClass) {
         this.formData.icon = iconClass
-        // this.icon.iconClass = iconClass
-      },
-      handleSelectionChange() {
-
       }
     }
   }
