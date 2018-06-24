@@ -4,7 +4,7 @@
       <el-menu
         router
         :collapse="false"
-        class="el-menu-vertical-demo"
+        :default-active="1"
         background-color="#2f3238"
         text-color="#fff"
         active-text-color="#45aed6"
