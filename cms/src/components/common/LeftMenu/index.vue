@@ -3,13 +3,14 @@
     <el-row class="tac">
       <el-menu
         router
-        :collapse="false"
-        :default-active="1"
+        :collapse="isCollapse"
+        default-active="/"
         background-color="#2f3238"
         text-color="#fff"
         active-text-color="#45aed6"
         style="border-right: none">
-        <div class="menu-title">计服3.0后台管理系统</div>
+        <div v-if="!isCollapse" class="menu-title">计服3.0后台管理系统</div>
+        <div v-else class="menu-title">管理后台</div>
         <template v-for="item in menuList">
           <!--有二级菜单-->
           <template v-if="item.children && item.children.length > 0">
@@ -42,6 +43,8 @@
 <script>
   export default {
     name: "index",
+    mounted() {
+    },
     data() {
       return {
         menuList: [
@@ -52,31 +55,31 @@
             key: 1
           },
           {
-            path: '/a',
+            path: '/system',
             icon: 'icon iconfont icon-wxbgongju',
             title: '系统管理',
             key: 2,
             children: [
               {
-                path: '/',
+                path: '/system',
                 icon: 'icon iconfont icon-chengyuan',
                 title: '成员管理',
                 key: 21
               },
               {
-                path: '/',
+                path: '/system',
                 icon: 'icon iconfont icon-jiaoseziliao',
                 title: '角色管理',
                 key: 22
               },
               {
-                path: '/menu',
+                path: '/system/menu',
                 icon: 'icon iconfont icon-caidanshezhi',
                 title: '菜单管理',
                 key: 23
               },
               {
-                path: '/',
+                path: '/system/',
                 icon: 'icon iconfont icon-wangzhan',
                 title: '网站配置',
                 key: 24
@@ -149,7 +152,8 @@
               }
             ]
           }
-        ]
+        ],
+        isCollapse: false
       };
     },
     methods: {

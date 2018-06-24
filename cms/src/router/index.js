@@ -12,7 +12,7 @@ const  routes = [
     component: App,
     children: [
       {
-        path: '/menu',
+        path: '/system/menu',
         name: 'Menu',
         component: Menu
       }

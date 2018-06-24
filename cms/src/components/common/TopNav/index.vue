@@ -31,7 +31,6 @@
   .topNav-container {
     display: inline-block;
     width: calc(100% - 20px);
-    height: 56px;
     padding-right: 20px;
     line-height: 56px;
     text-align: right;
