@@ -111,7 +111,9 @@ const leftMenu = {
             }
           ]
         }
-      ]
+      ],
+      breadList: [],
+      activeBread: ''
     },
     mutations: {
       SET_COLLAPSE: (state, isCollapse) => {
@@ -120,6 +122,33 @@ const leftMenu = {
       SET_MENULIST: (state, menuList) => {
         state.menuList = menuList
       },
+      SET_BREADLIST: (state, breadList) => {
+        state.breadList = breadList
+      },
+      ADD_BREADLIST: (state, bread) => {
+        state.breadList.push(bread)
+      },
+      SET_ACTIVEBREAD: (state, activeBread) => {
+        state.activeBread = activeBread
+      },
+      REMOVE_BREADLIST: (state, targetName) => {
+        if (state.breadList.length > 1) {
+          let tabs = state.breadList;
+          let activePath = state.activeBread;
+          if (activePath === targetName) {
+            tabs.forEach((tab, index) => {
+              if (tab.name === targetName) {
+                let nextTab = tabs[index + 1] || tabs[index - 1];
+                if (nextTab) {
+                  activePath = nextTab.path;
+                }
+              }
+            });
+          }
+          state.activeBread = activePath
+          state.breadList = tabs.filter(tab => tab.name !== targetName)
+        }
+      }
     },
     actions: {
       setIsCollapse({ commit }, isCollapse) {
@@ -128,6 +157,18 @@ const leftMenu = {
       setMenuList({ commit }, menuList) {
         commit('SET_MENULIST', menuList)
       },
+      setBreadList({ commit }, breadList) {
+        commit('SET_BREADLIST', breadList)
+      },
+      addBreadList({ commit }, bread) {
+        commit('ADD_BREADLIST', bread)
+      },
+      setActiveBread({ commit }, activeBread) {
+        commit('SET_ACTIVEBREAD', activeBread)
+      },
+      removeBreadList({ commit }, targetName) {
+        commit('REMOVE_BREADLIST', targetName)
+      }
     }
 }
 

@@ -3,9 +3,7 @@
     <left-menu class="left-menu" :style="{ width: leftWidth }"></left-menu>
     <div class="right" :style="{ width: rightWidth }">
       <top-nav class="top-nav"></top-nav>
-      <div class="bread-tab">
-        <bread-crumb></bread-crumb>
-      </div>
+      <bread-crumb class="bread-tab"></bread-crumb>
       <div class="content">
         <router-view></router-view>
       </div>
