@@ -1,5 +1,5 @@
 <template>
-  <div class="leftMenu-container">
+  <div class="leftMenu-container" v-on:mouseover="isCloseNav(false)" @mouseout="isCloseNav(true)">
     <el-row class="tac">
       <el-menu
         router
@@ -41,9 +41,13 @@
 </template>
 
 <script>
+  import { mapGetters } from 'vuex'
   export default {
     name: "index",
     mounted() {
+    },
+    computed: {
+      ...mapGetters(['isCollapse'])
     },
     data() {
       return {
@@ -152,12 +156,14 @@
               }
             ]
           }
-        ],
-        isCollapse: false
+        ]
       };
     },
     methods: {
-
+      // 是否收起导航条
+      isCloseNav(value) {
+        this.$store.dispatch('setIsCollapse',value)
+      },
     }
   }
 </script>

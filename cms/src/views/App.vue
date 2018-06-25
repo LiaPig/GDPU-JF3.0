@@ -3,7 +3,9 @@
     <left-menu class="left-menu" :style="{ width: leftWidth }"></left-menu>
     <div class="right" :style="{ width: rightWidth }">
       <top-nav class="top-nav"></top-nav>
-      <div class="bread-tab">这里是面包屑</div>
+      <div class="bread-tab">
+        <bread-crumb></bread-crumb>
+      </div>
       <div class="content">
         <router-view></router-view>
       </div>
@@ -14,33 +16,35 @@
 <script>
   import LeftMenu from '@/components/common/LeftMenu'
   import TopNav from '@/components/common/TopNav'
+  import BreadCrumb from '@/components/common/BreadCrumb'
+  import { mapGetters } from 'vuex'
   export default {
     name: "main",
     components: {
       LeftMenu,
-      TopNav
+      TopNav,
+      BreadCrumb
+    },
+    computed: {
+      ...mapGetters(['isCollapse'])
     },
     data() {
       return {
-        isCollapse: false,
-        leftWidth: '200px',
-        rightWidth: 'calc(100% - 200px)'
+        leftWidth: '64px',
+        rightWidth: 'calc(100% - 64px)'
       };
     },
     watch:{
-      isCollapse(val, oldVal){//普通的watch监听
+      isCollapse(val, oldVal){
         if(val) {
-          this.leftWidth = '200px'
-          this.rightWidth = 'calc(100% - 200px)'
-        }
-        else {
           this.leftWidth = '64px'
           this.rightWidth = 'calc(100% - 64px)'
         }
+        else {
+          this.leftWidth = '200px'
+          this.rightWidth = 'calc(100% - 200px)'
+        }
       }
-    },
-    methods: {
-
     }
   }
 </script>
@@ -71,14 +75,14 @@
     top: 56px;
     right: 0;
     width: 100%;
-    height: 34px;
-    line-height: 34px;
+    height: 40px;
+    line-height: 40px;
     text-align: left;
     border-bottom: 1px solid #E4E7ED;
   }
   .content {
     position: absolute;
-    top: 90px;
+    top: 96px;
     left: 0;
     width: 100%;
   }
